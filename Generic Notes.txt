@@ -79,3 +79,17 @@ It's not a resereved keyword.
 Make sure to remebr - COMPILER DOEN;T CHECK ANYTHING IT'S ONLY MAKE SURE - IS EVERYTHING AS PER THE STANDARD SYNTAX OR NOT, its A VALID METHOD OR NOT. EXECUTION IS RESPONSIBLE FOR CHECKING THE CORRECTENESS AND ISSUES 
 
 -------------------------------------------------------------------------------------------------------------------------------
+
+Day 5 :
+
+- JDK, JRE, JVM
+JDK - Dev Tool + Compiler - responsible for development of program
+JRE - Runtime Environment. All the features, functions responsible for pre built environment. like - System, String and all libraries and files
+JVM - A virtum machine created while running/execution of program .
+
+- rt.java is responsible for one of the core run time environment of java
+- for checking teh classes adn rt enrirment we can use the command - jar -tvf rt.jar
+- for extracting(Unzip) rt environment - jar -xvf rt.jar
+
+- The name we assgine to method name, class name, variale name is called as - Identifier. An identifier cna newver be a reserved keyword. Can't use special charcaters except _
+-------------------------------------------------------------------------------------------------------------------------------
