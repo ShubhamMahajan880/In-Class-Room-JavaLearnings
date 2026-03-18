@@ -93,3 +93,63 @@ JVM - A virtum machine created while running/execution of program .
 
 - The name we assgine to method name, class name, variale name is called as - Identifier. An identifier cna newver be a reserved keyword. Can't use special charcaters except _
 -------------------------------------------------------------------------------------------------------------------------------
+
+Day 6
+
+- Static belong to ClASS & Non-Static belongs to Object
+- varibales must be static here because using in the static class.
+- If there is a single line assignment(like defining the variable) then taht is the part of assignment only. Logical part will always within the main method or class
+- Remebr logic will always written withing the main method - its eitherassigning the value or updating the value, its always logical and must be within 
+Datatypes - 
+
+- In Primitive datatypes, if we are n ot assigning anything then by default the value will be 0. 
+Checking Default Outputs when  cvalues are not assigned are -
+
+Checling all datatypes's sizes as  -
+Size of Default Byte Data is - 0
+Size of Default Short Data is - 0
+Size of Defaut Int Data is - 0
+Size of Default Long Data is - 0
+Size of Default Float Data is - 0.0
+Size of Default Double Data is - 0.0
+Size of Default Char Data is -
+Size of Default String Data is - null
+Size of Default Boolean Data is - false
+	
+-------------------------------------------------------------------------------------------------------------------------------
+
+Day 7_18nth March
+
+
+1.	Static(Class Specific) Variable – Outside the Method
+2.	Instance (Object) Variable - Outside the Method
+3.	Local Variable – Declared Inside Method/block
+
+- Static belong to class and common for all the objects, Non-static(Instance) belongs to Object and every instance variable has different value and objects
+- Local Variables belongs to method only. (Main method or any method withing the class)
+- Duplicate varibales are stricktly not allowed in Java. 
+
+- By Deault value of Non-Primitive DataTypes are always null
+- Static, Instance and Local.
+Static belongs to class
+Instance belongs to object.
+
+when objkect belongs to the class - its an instance,
+when its common for all - it's static
+
+- in static .. primitive have default vbalue as - 0 or 0.00, but when creating local variable within the local method ... it  must be assigned value before usiong ... otherwise throw error , no default value for local declared variables
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
