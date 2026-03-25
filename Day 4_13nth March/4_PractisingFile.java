@@ -1,23 +1,31 @@
-class Revision
+class practisingOrdering
 {
-	public static void main(String args[])
-	{
-		String StudentName = args[0];
-		String StudentAdsress = args[1];
-		String StudentBackground = args[2];
-		String InstituteName = args[3];
-		String PackageExpectations = args[4];
-		String InterestedCompanies = args[5];		
-		
-		System.out.println("Candidate Name is - "+StudentName);
-		System.out.println("Candidate Address is - "+StudentAdsress);
-		System.out.println("Candidate's backgroud is - "+StudentBackground);
-		System.out.println("Student Study in - "+InstituteName);
-		System.out.println("Candidate's Expectations are  - "+PackageExpectations);
-		System.out.println("Candidate's Preferences are - "+InterestedCompanies);
-		
-	}
+			public static void main(String args[])
+			{
+				String personName = args[0];
+				String personDream = args[1];
+				String personPackage = args[2];
+				String personBankBalane = args[3];
+				String personLocation = args[4];
+				String personTeam = args[5];
+				
+				
+				System.out.println("Name of the Person is - "+personName);
+				System.out.println("Dream of the Person is - "+personDream);
+				System.out.println("Package of the Person is - "+personPackage);
+				System.out.println("BankBalance of the Person is - "+personBankBalane);
+				System.out.println("Location of the Person is - "+personLocation);
+				System.out.println("Team of the Person is - "+personTeam);			
+				
+			}
+	
+/* 111 Hyderabad VeryHelpfulandOutstanding
+Name of the Person is - ShubhamMahajan
+Dream of the Person is - Microsoft
+Package of the Person is - 25LPA
+BankBalance of the Person is - 1111111
+Location of the Person is - Hyderabad
+Team of the Person is - VeryHelpfulandOutstanding */
 	
 	
-
 }
