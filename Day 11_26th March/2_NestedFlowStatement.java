@@ -24,6 +24,11 @@ class ResultMethodology
 		else if(percentage >= 55 && percentage < 70)
 		{
 			System.out.println("You've done wonderfully, you are in the Thoird Division");
+		
+		}
+		else if(percentage >= 40 && percentage < 55)
+		{
+			System.out.println("You've done wonderfully, you are in the Thoird Division");
 		}
 		else
 		{
