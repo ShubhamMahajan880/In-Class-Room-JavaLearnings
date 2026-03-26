@@ -1,10 +1,10 @@
-Notes - 
+Notes -
 
-Day 1: 
+Day 1:
 
 
 
-0\) Standard SYntax or SOurce code will always given as - 
+0\) Standard SYntax or SOurce code will always given as -
 
 
 
@@ -30,7 +30,7 @@ class HelloWorld
 
 
 
-1\) For compilation always use the command in the same directory - 
+1\) For compilation always use the command in the same directory -
 
 \- Javac is the compiler responsible for compiling the file. We are asking for compilation by using javac
 
@@ -44,13 +44,13 @@ E:\\Java This Side\\Day 1>javac Helloworld.java
 
 
 
-2\) aways use write naming convention while crating the class. Must be first letter capital and secondone too which is subsequent 
+2\) aways use write naming convention while crating the class. Must be first letter capital and secondone too which is subsequent
 
 
 
-This was about compilation and now for output - 
+This was about compilation and now for output -
 
-3\) For running use the command in same directory as - 
+3\) For running use the command in same directory as -
 
 Directory Path>java CLASSNAME
 
@@ -62,11 +62,11 @@ E:\\Java This Side\\01\_Day 1>java HelloKodewala
 
 
 
-Day 2: 
+Day 2:
 
 
 
-Day 3: 
+Day 3:
 
 \- When there is only empty class created within program and i am saving the .java file and compiling with compiler then compilation takes place, even no main method, compilation takes place BUT BUT BUT Exectuin is not possible as there is no MAIN METHOD. only COMPILATION happen
 
@@ -82,7 +82,7 @@ class AccountTrying
 
 
 
-\- Next now we have the main method and we are trying to execute via CMD then it happens. compilation and execution both takes place successfully. 
+\- Next now we have the main method and we are trying to execute via CMD then it happens. compilation and execution both takes place successfully.
 
 \- either we write anything within main method or not but the execution takes place as there is main method which is enough for execution.
 
@@ -96,7 +96,7 @@ class AccountTrying
 
 &#x09;{
 
-&#x09;	
+&#x09;
 
 &#x09;}
 
@@ -116,7 +116,7 @@ class AccountTrying
 
 
 
-Day 4: Understanding of full syntax - 
+Day 4: Understanding of full syntax -
 
 
 
@@ -142,7 +142,7 @@ static - In java, a method can be called either by class or by object only. by u
 
 void - returns nothing to jvm, just calling
 
-main - main method must be in main not in Main, otherwise gets error - 
+main - main method must be in main not in Main, otherwise gets error -
 
 Error: Main method not found in class Gateway, please define the main method as:
 
@@ -154,7 +154,7 @@ It's not a resereved keyword.
 
 
 
-Make sure to remebr - COMPILER DOEN;T CHECK ANYTHING IT'S ONLY MAKE SURE - IS EVERYTHING AS PER THE STANDARD SYNTAX OR NOT, its A VALID METHOD OR NOT. EXECUTION IS RESPONSIBLE FOR CHECKING THE CORRECTENESS AND ISSUES 
+Make sure to remebr - COMPILER DOEN;T CHECK ANYTHING IT'S ONLY MAKE SURE - IS EVERYTHING AS PER THE STANDARD SYNTAX OR NOT, its A VALID METHOD OR NOT. EXECUTION IS RESPONSIBLE FOR CHECKING THE CORRECTENESS AND ISSUES
 
 
 
@@ -200,13 +200,13 @@ Day 6
 
 \- If there is a single line assignment(like defining the variable) then taht is the part of assignment only. Logical part will always within the main method or class
 
-\- Remebr logic will always written withing the main method - its eitherassigning the value or updating the value, its always logical and must be within 
+\- Remebr logic will always written withing the main method - its eitherassigning the value or updating the value, its always logical and must be within
 
-Datatypes - 
+Datatypes -
 
 
 
-\- In Primitive datatypes, if we are n ot assigning anything then by default the value will be 0. 
+\- In Primitive datatypes, if we are n ot assigning anything then by default the value will be 0.
 
 Checking Default Outputs when  cvalues are not assigned are -
 
@@ -256,7 +256,7 @@ Day 7\_18nth March
 
 \- Local Variables belongs to method only. (Main method or any method withing the class)
 
-\- Duplicate varibales are stricktly not allowed in Java. 
+\- Duplicate varibales are stricktly not allowed in Java.
 
 
 
@@ -284,13 +284,13 @@ when its common for all - it's static
 
 
 
-&#x20;- always remember whenever taking the input from user using CLA then must be do everything inside main method or use STatic while declaring variable and all 
+&#x20;- always remember whenever taking the input from user using CLA then must be do everything inside main method or use STatic while declaring variable and all
 
 
 
 class AdditionSystem
 
-{	
+{
 
 &#x09;
 
@@ -304,7 +304,7 @@ class AdditionSystem
 
 &#x09;	String second = args\[1];
 
-&#x09;	
+&#x09;
 
 &#x09;	int firstNumber = Integer.parseInt(first);
 
@@ -318,7 +318,7 @@ class AdditionSystem
 
 
 
-\- when want to use static then - 
+\- when want to use static then -
 
 class AdditionSystem
 
@@ -348,7 +348,7 @@ Day 8\_23rd March
 
 
 
-Oeprators in Java - 
+Oeprators in Java -
 
 
 
@@ -360,7 +360,7 @@ Oeprators in Java -
 
 
 
-Remember in myjavaversion - 
+Remember in myjavaversion -
 
 userType.equals("GOLD")
 
@@ -372,11 +372,11 @@ Day 9\_24th March
 
 
 
-Way to create method with objects - 
+Way to create method with objects -
 
 
 
-1\) method call \& creation without static 
+1\) method call \& creation without static
 
 public static void main(String args\[])
 
@@ -384,15 +384,15 @@ public static void main(String args\[])
 
 &#x09;
 
-&#x09;	CarInfo billing = new CarInfo();// creting object of class CarInfo 
+&#x09;	CarInfo billing = new CarInfo();// creting object of class CarInfo
 
 &#x09;									//Calling (using it) method
 
-&#x09;	
+&#x09;
 
 &#x09;	int finalAmount = billing.additionalExpense(10000, 300000);
 
-&#x09;	
+&#x09;
 
 &#x09;	System.out.println("So, the final amount paid is - "+finalAmount);
 
@@ -420,21 +420,21 @@ public static void main(String args\[])
 
 public static void main(String args\[])
 
-&#x09;	{	
+&#x09;	{
 
-&#x09;		
+&#x09;
 
 &#x09;		int finalAmount = CarInfo.additionalExpense(10000, 300000);
 
-&#x09;		
+&#x09;
 
 &#x09;		System.out.println("So, the final amount paid is - "+finalAmount);
 
-&#x09;	
+&#x09;
 
 &#x09;	}
 
-&#x09;	
+&#x09;
 
 &#x09;	static int additionalExpense(int insurance, int actualCost)
 
@@ -448,13 +448,13 @@ public static void main(String args\[])
 
 
 
-&#x20;- always remember whenever taking the input from user using CLA then must be do everything inside main method or use STatic while declaring variable and all 
+&#x20;- always remember whenever taking the input from user using CLA then must be do everything inside main method or use STatic while declaring variable and all
 
 
 
 class AdditionSystem
 
-{	
+{
 
 &#x09;
 
@@ -468,7 +468,7 @@ class AdditionSystem
 
 &#x09;	String second = args\[1];
 
-&#x09;	
+&#x09;
 
 &#x09;	int firstNumber = Integer.parseInt(first);
 
@@ -482,7 +482,7 @@ class AdditionSystem
 
 
 
-\- when want to use static then - 
+\- when want to use static then -
 
 class AdditionSystem
 
@@ -514,13 +514,13 @@ Day 10\_25th March
 
 
 
-Access Modifiers in Java  - 
+Access Modifiers in Java  -
 
 
 
-\- I n java for the variale, if not writing anything means its **default** 
+\- I n java for the variale, if not writing anything means its **default**
 
-\- Private var - responsible for using it **within** the class only, can;t be accessed outside the class or by any other class 
+\- Private var - responsible for using it **within** the class only, can;t be accessed outside the class or by any other class
 
 
 
@@ -532,9 +532,9 @@ Package in Java  - Package can be considered as Folder Structures/Directory for 
 
 
 
-\- Every class is a part of some package, if not providing then there is always a **default package**. 
+\- Every class is a part of some package, if not providing then there is always a **default package**.
 
-\- The naming convention of the package is **reverse** of the company domain wise. 
+\- The naming convention of the package is **reverse** of the company domain wise.
 
 company domain - kodewala.com
 
@@ -542,17 +542,18 @@ Packgae namingconvetion - package com.kodewala
 
 
 
-* The first line of java is always responsible for package file declarartion 
+* The first line of java is always responsible for package file declarartion
 * within the **same** package if variable is **default** then other class can **access**. When var is **private** then still **can't access** by any **other class** even within the **same package**
 * **class is also default until and unless no any access modifier used**
 * **If a class is public, then file name MUST match class name**
+
 
 
 **-> If the var is default then it can be accessible by other classes within the same package**
 
 **while using different package in new file - make sure to do public to method in the file from where we want access**
 
-**-> But when i changed the package in a new file and trying to accesing the default value from previous file then it's not accessible** 
+**-> But when i changed the package in a new file and trying to accesing the default value from previous file then it's not accessible**
 
 
 
@@ -566,9 +567,9 @@ Packgae namingconvetion - package com.kodewala
 
 
 
-Default sope withon -> same package and can be access by any of the class. 
+Default sope withon -> same package and can be access by any of the class.
 
-Pvt scope within the class 
+Pvt scope within the class
 
 
 
@@ -590,45 +591,5 @@ Public -> Anywhere
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Day 11\_26th March
 
