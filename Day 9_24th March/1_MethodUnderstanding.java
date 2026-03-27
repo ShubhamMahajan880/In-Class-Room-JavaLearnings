@@ -69,7 +69,7 @@ Multiplicaition result is - 152.0 */ */
 
 //---------------------------
 // while doing by taking user input 
-
+//when int 
 /* public static void main(String args[])
 	{
 		String first = args[0];
@@ -89,3 +89,48 @@ Multiplicaition result is - 152.0 */ */
 		int c = a+b;
 		return c;
 	} */
+
+// when float
+/* class MethodUnderstanding
+{
+	public static void main(String args[])
+	{	
+		String firstNum = args[0];
+		String secNum = args[1];
+		
+		int numOne = Integer.parseInt(firstNum);
+		int numTwo = Integer.parseInt(secNum);
+		
+		methodUnderstanding calc = new methodUnderstanding();
+		int finalResult = calc.numberSum(numOne, numTwo);
+		
+		System.out.println("FInally Number sum can be give as - "+finalResult);
+		
+		String thirdNum = args[2];
+		String fourthNum = args[3];
+		
+		float numThree = Float.parseFloat(thirdNum);
+		float numFourth = Float.parseFloat(fourthNum);
+		
+		methodUnderstanding device = new methodUnderstanding();
+		float anotherResult = device.numberDifference(numThree, numFourth);
+		
+		System.out.println("Hence, the floating Difference is - "+anotherResult);
+	}
+	
+	public int numberSum(int a, int b)
+	{
+		int c = a+b;
+		return c;
+	}
+	
+	public float numberDifference(float d, float e)
+	{
+		float f = d-e;
+		return f;
+	}	
+	
+	
+	
+	
+} */

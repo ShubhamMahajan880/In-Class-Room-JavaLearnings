@@ -18,6 +18,7 @@ class practisingOrdering
 				System.out.println("Team of the Person is - "+personTeam);			
 				
 			}
+}
 	
 /* 111 Hyderabad VeryHelpfulandOutstanding
 Name of the Person is - ShubhamMahajan
@@ -27,5 +28,31 @@ BankBalance of the Person is - 1111111
 Location of the Person is - Hyderabad
 Team of the Person is - VeryHelpfulandOutstanding */
 	
-	
-}
+// When not declaring within the main method but inside of class
+
+/* class ShubhamSPassion
+{	
+		static String userName;
+		static String userTarget;
+		static String CTCOffered;
+		static String HRS;
+		static String officeAddress;		
+		static int compensation;
+		
+	public static void main(String args[])
+	{	
+		userName = args[0];
+		userTarget = args[1];
+		CTCOffered = args[2];
+		HRS = args[3];
+		officeAddress = args[4];
+		
+		compensation = Integer.parseInt(CTCOffered);
+		 
+		System.out.println("Name of the user is - "+ userName);
+		System.out.println("Targeting to - "+userTarget);
+		System.out.println("Earning - "+compensation);
+		System.out.println("He's getting HRA - "+HRS);
+		System.out.println("His Office Location is - "+officeAddress);	
+	}	
+} */

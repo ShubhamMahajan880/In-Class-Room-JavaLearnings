@@ -36,7 +36,7 @@ class HelloWorld
 
 \- javac saying compile and check ths file with .java
 
-
+&#x09;
 
 Directory Path>javac filename.java
 
@@ -192,7 +192,57 @@ JVM - A virtum machine created while running/execution of program .
 
 Day 6
 
+* static won;t work for args\[0]
 
+Correct syntax -
+
+
+
+class UnderstandingOR
+
+{
+
+&#x20;   static String packageCracked;
+
+&#x20;   static String companyType;
+
+
+
+&#x20;   public static void main(String args\[])
+
+&#x20;   {
+
+&#x20;       packageCracked = args\[0];
+
+&#x20;       companyType = args\[1];
+
+
+
+
+
+OR
+
+
+
+public static void main(String args\[])
+
+&#x09;	{
+
+&#x09;
+
+&#x09;		String packageCracked = args\[0];
+
+&#x09;		System.out.println("Please enter the amount - "+packageCracked);
+
+&#x09;		String companyType = args\[1];
+
+&#x09;		int finalCTC = Integer.parseInt(packageCracked);
+
+&#x09;		int minCTC = 15;
+
+
+
+\------------
 
 \- Static belong to ClASS \& Non-Static belongs to Object
 
@@ -592,4 +642,241 @@ Public -> Anywhere
 
 
 Day 11\_26th March
+
+
+
+Conditional Statements(IF Else and If else if then else)
+
+
+
+* When we declare method as static and don;t create the object to accessin the method from main method-
+
+class UnderstandingControlFlow
+
+{
+
+&#x09;
+
+&#x09;public static void main(String args\[])
+
+&#x09;{
+
+&#x09;	String packageCracked = args\[0];
+
+&#x09;	System.out.println("Please enter the annual CTC - ");
+
+&#x09;	int totalCompensation = Integer.parseInt(packageCracked);
+
+&#x09;	UnderstandingControlFlow.classFlow(totalCompensation);
+
+&#x09;
+
+&#x09;}
+
+&#x09;
+
+&#x09;static void classFlow(int CTC)
+
+&#x09;{
+
+&#x09;	if(CTC>=15)
+
+&#x09;	{
+
+&#x09;		System.out.println("Great Start, Doing well, Enjoy the Jawani");
+
+&#x09;	}
+
+&#x09;	else
+
+&#x09;	{
+
+&#x09;		System.out.println("Need to do motre Hardwork for goals");
+
+&#x09;	}
+
+&#x09;
+
+&#x09;
+
+&#x09;}
+
+&#x09;
+
+}
+
+\-------------------------
+
+* When we access via object creation(from main method) as created particular method is non static
+
+
+
+class UnderstandingControlFlow
+
+{
+
+&#x09;
+
+&#x09;public static void main(String args\[])
+
+&#x09;{
+
+&#x09;	String packageCracked = args\[0];
+
+&#x09;	System.out.println("Please enter the annual CTC - ");
+
+&#x09;	int totalCompensation = Integer.parseInt(packageCracked);
+
+&#x09;
+
+&#x09;	UnderstandingControlFlow valAdded = new UnderstandingControlFlow();
+
+&#x09;	valAdded.classFlow(totalCompensation);
+
+&#x09;
+
+&#x09;}
+
+&#x09;
+
+&#x09;public void classFlow(int CTC)
+
+&#x09;{
+
+&#x09;	if(CTC>=15)
+
+&#x09;	{
+
+&#x09;		System.out.println("Great Start, Doing well, Enjoy the Jawani");
+
+&#x09;	}
+
+&#x09;	else
+
+&#x09;	{
+
+&#x09;		System.out.println("Need to do motre Hardwork for goals");
+
+&#x09;	}
+
+&#x09;
+
+&#x09;
+
+&#x09;}
+
+&#x09;
+
+}
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 12\_27th March
+
+
+
+In Package -
+
+When we want to execte in terms of package, then use . in the same was as the compilation
+
+
+
+* FOr Compilation -
+
+E:\\51 \_Shagun\\Java This Side\\In Class Room\\Day 12\_27th March>javac com/kodewala/3\_ScannerClasssIntro.java (Packedirectory/className)
+
+
+
+* For Execution -
+
+E:\\51 \_Shagun\\Java This Side\\In Class Room\\Day 12\_27th March>java com.kodewala.Message ((Packedirectory.className))
+
+
+
+\----
+
+Scanner class syntax -
+
+
+
+Scanner scanner = new Scanner(System.in);
+
+System.out.println("Please metion the name - ");
+
+&#x09;
+
+&#x09;	String name = scanner.next();
+
+&#x09;	System.out.println("So, you entred - "+name);
+
+&#x09;
+
+&#x09;	scanner.close();
+
+* System.in is responsible for establishing conection with console
+* scanner.next() - is responsible for the next input in console. here scanner is object of Scanner classs.
+* scanner.close(); - for closing the connection after taking all inputes.
+
+
+
+* java.lang.\* package is responsible for all the packages(String, System and all inbnuilt). It's imlicitily internally implemented by compiler. \* - indicates all files in it
+
+\_ All imports, All Packages are always begin before the class initialization.
+
+&#x20;
+
+\---
+
+Loops -
+
+* To perform the same task again \& again
+* **For** loop is suitable when the input size is **fixed/static**. (let say length - 1 to 10, so 10 is fixed not go on  11)
+* When i/p size is - **dynamic** - comes to **while** loop
+* do while - it'll always ezxecute once no matter true or false.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

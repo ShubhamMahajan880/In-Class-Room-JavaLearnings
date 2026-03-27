@@ -53,7 +53,7 @@ class CarInfo
 //------------------------------
 
 // while doing by taking user input 
-
+// when Int 
 /* public static void main(String args[])
 	{
 		String first = args[0];
@@ -74,5 +74,31 @@ class CarInfo
 		return c;
 	} */
 	
-	
+//----
+
+//when double 
+	/* class MethodCreation
+	{
+		public static void main(String args[])
+		{
+			String firstNum = args[0];
+			String secNum = args[1];
+			
+			System.out.println("please enter the numbers - ");
+			
+			double numOne = Double.parseDouble(firstNum);
+			double numTwo = Double.parseDouble(secNum);
+			
+			double resultFinalize = MethodCreation.numberMultiplication(numOne, numTwo);
+			System.out.println("So, the mul in double is - "+resultFinalize);	
+			
+		}
+		
+		static double numberMultiplication(double a, double b)
+		{
+			double c = a * b;
+			return c;
+			
+		}	
+	} */
 	
