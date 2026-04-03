@@ -1,0 +1,15 @@
+Java Syllabus Covered till now - 
+
+
+D1) Java Intro, Installation, First program, Compilation & Execution
+D2) Revision of above all and better understanding of class
+D3) Java Features, Theory and why only Java? Possible examples of when compilation successful and Execution also Successful
+D4) Importance of public, static, void main - every single word and why using ? How to write class and methods with all rules.
+D5) What is JDK, JRE & JVM complete theory? and basic 2 number addition program? Reserved Keywords in Java ?
+D6) Datatypes, Default Values and all ? How to use Datatypes, Define Variables and all .
+D7) What is  Static, Local and Instance variable? When to use what and why?
+D8) Operators in java  - Assignment,  Relational & Logical
+D9) Revision of till now. Method Creation. Using Static and W/O using Static. 
+D10) Access Modifiers in java , when to use which one. Packages in Java, How to use? Cases of Same Package and Different Package? How to Import Package ?
+D11) Control Flow Statement - IF-Else, IF-Else IF-Else. 
+D12) Loops in Java  - For, While, Do-While. Input from the Scanner Class. 

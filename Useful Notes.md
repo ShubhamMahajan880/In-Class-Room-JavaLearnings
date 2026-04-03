@@ -842,6 +842,152 @@ Loops -
 
 
 
+Day 13\_30th March
+
+
+
+In Eclipse -
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 14\_31st March
+
+
+
+Break - Break is used for **exit** from the **loop**. It'll exit just after matching the situation and using break;
+
+Continue - continue is responsible for **skip** the **current situation only**. it'll skip only desired situation and then continue the rest all processes.
+
+return - Return responsible for **exiting** from that **particular method**. Not from the entire class.
+
+
+
+Switch CaSe Statements - better than if-else-if. It looks pretty well.
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 15\_01st April
+
+
+
+Object Creation -
+
+
+
+* must remember - if the class consist main method and its public then definitely use **SAME** Class Name \& File Name.
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 16\_02nd April
+
+
+
+* Default constructor is always available in compiler until no constructor created.
+* when multiple Constructors in the class then it'd be used based on the **no. of arguements as per constructors**.
+* we **cannot** have more than **1** constructor with same no. of arguements and same datatypes.. it'll only consider to one(firstone)
+* and this concept is called as - **Constructor Overloading.**
+* Inheritance - Parents properties are available in the Child Class.
+* Extend - is responsible keyword to **achieve inheritance** in java.
+
+its like extending a parent class to  a class
+
+class Order
+
+{
+
+&#x09;
+
+}
+
+
+
+public class SuperClassUnderstanding extends Order
+
+{
+
+&#x09;public static void main(String\[] args) {
+
+&#x09;
+
+&#x09;}
+
+}
+
+* In java, **Object class** - is the **parent** of all the classes implicitely. no need to use extend for object class, its **internnaly with every class**.
+
+its Like -
+
+class Order extends Object
+
+{
+
+&#x09;
+
+}
+
+* If any class have no parents then bby compiler having **Object class as parent**.
+
+class Order DEFAULT PARENT Object CLASS
+
+{
+
+&#x09;
+
+}
+
+* for accessing the property of parent class - we need to **create the object of parent class also** first, to access via child classs.
+* **first line** of **constructor** is either **super or this**. If not writing then **by default** it's **super**.
+* **object** class having only one constructor which is with **no args**.
+* First line of Constructor is either Super() OR This().
+* Super() is **default** with **No args** and **implicitely implemented**.
+* Super() will always call to super class constructor.
+* for accessing the properties of parent or grandparent need to initialize to them also first - can be done by using super or child;
+* uses this for the same constructor withnn class.
+* Either super() would be sued or this() will be. COnstructor cannt do for both ata time.
+* super() wil lalways call to super class constructor, while this() will always call to this class constructor of same class.
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 17\_03rd April
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
