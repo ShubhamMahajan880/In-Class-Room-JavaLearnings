@@ -964,3 +964,209 @@ Day 17\_03rd April
 
 \-------------------------------------------------------------------------------------------------------------------------------
 
+
+
+Day 18\_07th April
+
+
+
+* Array and String in Java.
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 19\_08th April
+
+
+
+Blocks in Java - **100% Interview Specific**
+
+
+
+1. IIB - Instance Init Block
+2. SIB - Static Init Block
+
+
+
+Static means - only once
+
+Instance menas - for object.
+
+
+
+* SIB  - initialized just after loading class in memory
+* SIB will always execute first **(FOREVER)**, then main and then other things.
+* Without Main method we can print - using static
+* SIB Executed just after loaded the class.
+* IIB loaded as the object created
+* Remeber 1st) Line if Cosntructor always calls to super() OR this(), while 2nd) line always calls to IIB (Init Block)
+* For every object creation, IIB will get executed. Jitne objects bneneg utni baar phle Init Block IIB aayga/print hoga
+* Static will be outsde the main method and inside the public class(which having similar name as file nme)
+* jitne **Init Block** bnayange **phle saare** vo **execute** hinge **then constructor** similarlly **befire next constructor's message again all Init's will execute first**. So, Jitne Initi Bnayenge utne saare phle execute honge phi hi constrcutor pr aayaga. Jitni baar object bnega  bnega itni baar saare Initis call hoge.
+
+
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 20\_09th April
+
+
+
+* Heap - In object in Java Store in **Heap**.
+* String Constant Pool (SCP) - Inside the heap memory itself. where string classs objects stored..
+* MetaSpace - anything which is static in java loads in metaSPace.
+* Stack - Local variables/Method  Call/main inside the stack in memory.
+* before java 8 version, Meatspace is called as PermGen(Permnant Generation)
+* Garbage Collector responsible for remove unwanted obnjects form the memory.
+
+
+
+* String  - A bunch of character is called as String in Java. String is a classs in java which will allow us to create String Object.
+
+
+
+* Ways to create String Object -
+
+
+
+1. Using Literals - String s = "Hello";
+2. Using new keyword - String s = new String("Hello");
+
+
+
+* == will alwasys compare the memory addresses of the object. if value same then sdame addresses assign in SCP, so if equal then say True.
+* .equals will always compare the content inside string.
+
+
+
+
+
+* String s = "Hello"; //SCP - Luterall always in SCP memory - 1 object created
+* String s = new String("Hello"); // SCP + Heap. For new keywrods - its in HEAP Memory and for Literral its in SCP. - 2 object created. So Total 3 Objects of last 2 syntax.
+
+&#x09;	String s1 = "Pune";//in SCP
+
+&#x09;	String s2 = "Pune"; // 1 object created - not created new already in SCP
+
+
+
+&#x09;	System.out.println(s1 == s2);//true - comparing by object address. On that Object addrsses references are same.
+
+
+
+&#x09;	String s3 = "Amdavad"; // in S3 - SCP
+
+&#x09;	String s4 = new String("Amdavad");// in S3 \& S4 - 2 object created - in SCP + Heap
+
+&#x09;	String s5 = new String("Surat"); // in S3 \& S5 - 3 objects created, SCP + (SCP + Heap)
+
+
+
+
+
+&#x09;	System.out.println(s3 == s4);//False
+
+&#x09;	System.out.println(s3.equals(s4)); //True // comparing by content inside String
+
+&#x09;	System.out.println(s3.equals(s5));//False
+
+
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 21\_10th April
+
+
+
+* If i am addig 2 strings by creating a 3rd string then that 3rdstring wwill be the in HEAP.
+* But when i am adding any 2 strings withing the ""+"" by creating a 3rd new string then this will be store in SCP. 
+
+
+
+
+
+String s10 = "Bangalore";
+
+String s11 = "India";
+
+String s12 = s10 + s11;
+
+System.out.println(s12); // BangaloreIndia - s12 will be created in heap
+
+
+
+
+
+String s13 = "BangaloreIndia";
+
+System.out.println(s12 == s13);// false because s13 is litteral and in SCP, while s12 is in Heap and as a
+
+&#x09;	
+
+String s14 = "Bangalore" + "India"; 
+
+// compile Time Optimization , only single object will be created which is Liternal and in SCP. If we add 2 different strings by creating a 3rd string then that 3rd string will be as an object and in HEAP, but when we add all strings using ""+"" by creating a new String the its not objects, its a literal and in SCP.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

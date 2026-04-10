@@ -1,0 +1,114 @@
+// 1 → c
+// Class names follow PascalCase → EmployeeDetails
+
+// 2 → b
+// Instance variables are created per object
+
+// 3 → b
+// Default value of String instance variable = null
+
+// 4 → a
+// Two command-line inputs → args size = 2
+
+// 5 → d
+// args[2] doesn't exist → IndexOutOfBounds
+
+// 6 → b
+// Command-line arguments are always Strings
+
+// 7 → a
+// parseInt converts String → int
+
+// 8 → a
+// Static methods directly access only static members
+
+// 9 → c
+// Constructors cannot be static
+
+// 10 → c
+// Local variable scope = method/block
+
+// 11 → c
+// Compiler (javac) is part of JDK, not JRE
+
+// 12 → c
+// JVM implementation is platform dependent
+
+// 13 → b
+// javac generates .class (bytecode)
+
+
+// 14 → a
+// static allows JVM to call main without object
+
+// 15 → d
+// All given main signatures are valid
+
+// 16 → b
+// private main → JVM can't access → runtime error
+
+// 17 → b
+// JVM always calls main(String[] args)
+
+// 18 → d
+// _, $, digits allowed in variable names
+
+// 19 → a
+// Local variables must be initialized
+
+// 20 → b
+// Command-line arguments are runtime inputs
+
+
+// 21 → b
+// Static variables load first during class loading
+
+// 22 → a   ✅ (CORRECTED)
+// Static variable default value for int = 0
+
+// 23 → c
+// String is non-primitive (object)
+
+// 24 → d
+// Local variables have no default → must initialize
+
+// 25 → c
+// int cannot store null → compile error
+
+// 26 → d
+// System (class), out (static), println (method)
+
+
+// 27 → b
+// JRE can only run bytecode, not compile
+
+// 28 → c
+// Helps avoid hardcoded values
+
+// 29 → c
+// Allowed but bad practice
+
+// 30 → c
+// JDK required for compilation
+
+
+// 31 → b
+// Bytecode is platform independent, JVM is dependent
+
+// 32 → b
+// Non-static main → JVM cannot call → runtime error
+
+// 33 → b
+// args is array of String objects
+
+// 34 → c
+// Access beyond array → runtime exception
+
+// 35 → d
+// All statements about arrays are correct
+
+// 36 → a
+// Local variables must be initialized before use
+
+// 37 → b
+// Used to pass file/config inputs
