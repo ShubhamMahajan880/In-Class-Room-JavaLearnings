@@ -19,4 +19,13 @@ D14) Working and differentiate - Break, Continue and Return statements.
 D15) Object Creation and Constructors.
 D16) Constructor Overloading and super(), this() class concepts
 D17) using this class performing constructor's work and overloading  concept
+D18) Array and String in Java.
+D19) IIB - Instance Init Block, SIB - Static Init Block
+D20) Memory Management Concepts - Heap, Meta space, Stack, SCP(String Constant Pool)
+D21) Strings in Java  - Conceptual + Memory Management
 
+D22) Intern method, Final Class working, String Builder Concepts
+D23) Intro to oops - Encapsulations, Intro to Getters & Setters
+D24) Encapsulations Examples
+D25) Intro to Inheritance, Types and basic concepts.
+D26) Examples of Inheritance and Intro to Method Overriding.

@@ -1,5 +1,5 @@
 class ArrayCreation {
-	public void LearnString() {
+	public void learnString() {
 		String companiesName[] = new String[5];
 
 		companiesName[0] = "Microsoft";
@@ -36,6 +36,6 @@ public class ArrayUnderstanding {
 		System.out.println("Learnign about strings in this sesison =");
 		System.out.println("--------------->");
 		ArrayCreation aC = new ArrayCreation();
-		aC.LearnString();
+		aC.learnString();	
 	}
 }

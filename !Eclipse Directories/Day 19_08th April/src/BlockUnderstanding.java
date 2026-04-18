@@ -6,7 +6,7 @@ public class BlockUnderstanding {
 	}
 
 	public BlockUnderstanding() {
-		// 1st line will be super90 always
+		// 1st line will be super() always
 		// 2nd call to init block
 		System.out.println("Inside BlockUnderstanding() Constructor which is with no parametrs");
 	}

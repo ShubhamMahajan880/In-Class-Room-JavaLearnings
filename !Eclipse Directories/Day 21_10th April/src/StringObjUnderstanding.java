@@ -16,11 +16,19 @@ public class StringObjUnderstanding {
 		System.out.println(s1 == s5);//// false
 		System.out.println(s1.equals(s5));//// false
 
+		System.out.println(s3 == s5);// false - bhle hi using new ek copy SCP me bni ho leking HEAP waala to new hi hena to uska address not equal to SCP waale ka address
+		System.err.println(s3.equals(s5));//true
+
+		String s55 = new String("microsoft");
+		System.out.println(s5 == s55);// false - jb jb new keyword use hoga HEAP me nya object bnega .. bhle hi same object value ho.
+		System.out.println(s5.equals(s55));// true
+
 		System.out.println("-------------------------->");
 
 		s1.concat("Hyderabad");
 		System.out.println(s1);// can't do it, because string is Immutable.
-		String s4 = s1.concat("Bangalore"); // S4 - In heap and content is - Bangalore
+		String s4 = s1.concat("Bangalore"); // S4 - In heap and content is -MicrosoftBangalore
+		System.out.println(s4);//MicrosoftBangalore
 
 		String s7 = "MicrosoftBangalore"; // S7 - In SCP and content is - MicrosoftBangalore
 		System.out.println(s4 == s7);// false

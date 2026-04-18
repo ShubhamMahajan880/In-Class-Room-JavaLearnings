@@ -11,13 +11,13 @@ class Revision {
 		System.out.println("Let's see when 3rd Init will execute and start");
 	}
 
-//	public Revision() {
-//		System.out.println("After Init we'll call to constrctors message");
-//	}
+	public Revision() {
+		System.out.println("After Init we'll call to constrctors message");
+	}
 
-//	public Revision(int number) {
-//		System.out.println("After first constrctors 2nd will be called");
-//	}
+	public Revision(int number) {
+		System.out.println("After first constrctors 2nd will be called");
+	}
 
 }
 

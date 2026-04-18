@@ -18,10 +18,10 @@ class practisingOrdering
 				System.out.println("Team of the Person is - "+personTeam);			
 				
 			}
-}
+}	
 	
 /* 111 Hyderabad VeryHelpfulandOutstanding
-Name of the Person is - ShubhamMahajan
+Name of the Person is - SamikshaSoni
 Dream of the Person is - Microsoft
 Package of the Person is - 25LPA
 BankBalance of the Person is - 1111111

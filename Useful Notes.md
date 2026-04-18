@@ -4,7 +4,7 @@ Day 1:
 
 
 
-0\) Standard SYntax or SOurce code will always given as -
+0\) Standard Syntax or Source code will always given as -
 
 
 
@@ -18,7 +18,7 @@ class HelloWorld
 
 &#x09;{
 
-&#x09;	System.out.println("Hii, Eveeryone");
+&#x09;	System.out.println("Hii, Everyone");
 
 &#x09;}
 
@@ -26,7 +26,7 @@ class HelloWorld
 
 }
 
-\- In the naming convwntion first lwtwe must b capital of class name, if 2 words then both should be capital
+\- In the naming convention first letter must b capital of class name, if 2 words then both should be capital
 
 
 
@@ -34,7 +34,7 @@ class HelloWorld
 
 \- Javac is the compiler responsible for compiling the file. We are asking for compilation by using javac
 
-\- javac saying compile and check ths file with .java
+\- javac saying compile and check this file with .java
 
 &#x09;
 
@@ -637,6 +637,16 @@ Public -> Anywhere
 
 
 
+**Object can access ONLY its own class methods (and inherited ones)**
+
+**👉 Object hamesha us class ka banta hai jiska method/variable use karna hai**
+
+
+
+* kisi class ki koi method **default(no public/no private )** h to us **class me accessible he**, and **same package** me **dusri class**(file) me bhi **accessible he**
+* leking jb us method ko **private** kr diya to.. us **class me** to **pure me accessible** h pr **dusri class**(file) me **accessible nhi** he bheale hi same package he
+* when in **different package** - if method is **default or private Not acceesible** by different package and can be **only accessibe** in different package when **method declared as public**.
+
 \-------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -846,6 +856,8 @@ Day 13\_30th March
 
 
 
+* Kabhi bhi mehtod ka object nhi bnata hamesha class ka =object bnta he... and vo class ka object methods ko access krta he
+
 In Eclipse -
 
 \-------------------------------------------------------------------------------------------------------------------------------
@@ -970,7 +982,7 @@ Day 18\_07th April
 
 
 
-* Array and String in Java.
+* Array in Java.
 
 \-------------------------------------------------------------------------------------------------------------------------------
 
@@ -1088,7 +1100,7 @@ Day 21\_10th April
 
 
 * If i am addig 2 strings by creating a 3rd string then that 3rdstring wwill be the in HEAP.
-* But when i am adding any 2 strings withing the ""+"" by creating a 3rd new string then this will be store in SCP. 
+* But when i am adding any 2 strings withing the ""+"" by creating a 3rd new string then this will be store in SCP.
 
 
 
@@ -1110,9 +1122,9 @@ String s13 = "BangaloreIndia";
 
 System.out.println(s12 == s13);// false because s13 is litteral and in SCP, while s12 is in Heap and as a
 
-&#x09;	
+&#x09;
 
-String s14 = "Bangalore" + "India"; 
+String s14 = "Bangalore" + "India";
 
 // compile Time Optimization , only single object will be created which is Liternal and in SCP. If we add 2 different strings by creating a 3rd string then that 3rd string will be as an object and in HEAP, but when we add all strings using ""+"" by creating a new String the its not objects, its a literal and in SCP.
 
@@ -1122,51 +1134,135 @@ String s14 = "Bangalore" + "India";
 
 
 
+Day 22\_13nth April
+
+
+
+* When we create an string like String s1 = new  String("name") - then it created in HEAP as well as in SCP also ... but in somecases String only created in SCP like String s2 = "FatherName", and when we add two strings like String s3 = s1 + s2; then then goes into HEAP, now we want to make a copy of this only HEAP string into SCP - then we use the Intern Method()
+* when we adding 2 strings like String s1 = "Microsoft" + " Bangalore"; then it's in SCP not an issue but when add like String s3 = s1 + s2; then then goes into HEAP and foe using this HEAP also in SCP we used intern() method.
+* intern method is uses for creating a copy of HEAP object into SCP.
+* by using final keyword the respective class can't be parent class if any class.
+
+&#x09;	/\*
+
+&#x09;	 \* final class Accounting {
+
+&#x09;	 \*
+
+&#x09;	 \* }
+
+&#x09;	 \*
+
+&#x09;	 \* public class FinalClassUnderstanding extends Accounting
+
+&#x09;	 \*
+
+&#x09;	 \*  Cant do this operation because of final. cant be parent ever
+
+&#x09;	 \*/
+
+* For modifying string on using concat it'll create a new object in the memory and then perform modification, its not feasible for 100's of objects, so for memory and space management we uses concepts of StringBuffer \& StringBuilder which uses append method and do modification at the place in the string.
+* concatinaitn of 2 strings always work by assigning in the same object.
+
+s1.concat("is a skill"); // not working
+
+s1 = s1.concat("is a skill"); // Working
+
+
+
+* For avoiding this much procrsses of assigning by crating object internally in the meory and then modifying takes lots of space ad memory .. so by using append methos in StringBufffer \& StringBuilder.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 23\_14nth April
 
 
 
 
 
+OOPs in java  -
 
 
 
+Why Oops ?
+
+Features of OOps?
 
 
 
+1 - No one cared about your output everyone cares for your outcome.
 
 
 
+* Encapsulation - why it needed ? - Data(Var) Hiding \& Security
+
+On declaring a class public, then withing the same package any of the class can access/Set the value.  Encapsualtions allowing classe and methods to set \& get variable data.
+
+* In good practicdes must be variable pvt, so that other cases cann;t modify or access it..If ceclard variable as public means not following the oops CONCEPT
+* No we want to modify the class, but we dont want to modify by the variable directly, we'll give method to modify - so for this we uses Setters \& getters Methods.
+
+\-------------------------------------------------------------------------------------------------------------------------------
 
 
 
+Day 24\_15nth April
 
 
 
+* So in Encapsulation - Declaring Data(Fields/var/attributes) as **Private** and if someone(other classes) **want to modify/read** data, then they will **use public setter** to modify/set the values and **getter to read/get** the values.
+* so if our variable is private then someone can't read or change it directly by a1.balance = 15000; If we or someone wnat to do any modification then can be done by using getters \& Setters.
 
 
 
+Inheritance -
 
 
 
+* ANy parentclass or Super class will always available for ALL the child classes. Child class dont have freedom/option to choose the proeprties... whatever is parent's class prorperties child have always.. either they want to useor not.
+
+\-------------------------------------------------------------------------------------------------------------------------------
 
 
 
+&#x20;Day 25\_16nth April
 
 
 
+* Private methods can't be available in the child classed. Make sure to do them public.. so they can be accessible and used by outside classes. Other than private everything all methidss are avaibale in Inheritance.
 
 
 
+* Types of Inheritances are - 1 - Single Inheritance, 2 - Multilevel Inheritance, 3 - Hierarchical Inheritance and NO MULTIPLE INHERITANCE in JAVA.
 
 
 
+\-------------------------------------------------------------------------------------------------------------------------------
 
 
 
+&#x20;Day 26\_17nth April
 
 
 
+***100% INTERVIEW SPECIFIC***
 
 
 
+* Using Inheritance we no neefd towriote the functionalities form scratch we cn drorectly use them if gthey are available in the parent or the object class.
+* Method Overriding - When child class want to use his own funcitnality instead of given parent class functionality then can be done by adding some extra informationnor operations by his own and this concept is called as Method Overriding.
+* Let say - Parents said Hii , but child wants to say Hello. Then in Parent Class having statement Hii, Child class crated his own statement Hello within the **same method**.
+* why overriding - when child dont want to use the given functionality of parent class... child want to add some more features or change something within the same class.
+* it's called \& represents as  -
+
+child class IS-A parent classs
+
+Manager IS-A EMployee - which menas here the manager class is child class and having parent class Employee.
+
+* Method Overriding is not possible without Inheritance.
+
+\-------------------------------------------------------------------------------------------------------------------------------
 
