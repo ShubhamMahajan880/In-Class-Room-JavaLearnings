@@ -1266,3 +1266,355 @@ Manager IS-A EMployee - which menas here the manager class is child class and ha
 
 \-------------------------------------------------------------------------------------------------------------------------------
 
+
+
+Day 27\_20th April
+
+
+
+* @overriding is responsible for checking overridnng is correctly done or not.
+
+Rules for overriding concpets-
+
+
+
+1 - Accesss Modifiers should be **Same OR Wider**(Should not reduce the scope);(**ussse bada**) whatever in the parent class, you cannot reduce it in the child class either it sbould same or wider
+
+* if we have method Type is default in the parernt class then for following overridng concepts correctly we also have default in the child class.
+* if we have **public** in the **parent class**, then **cannot** have **lesser than** public in the **child class**.
+* if we have method type **Default in the parent class** then in **child class can have** wider than default - which are **Public \& Protected**
+
+
+
+means when parent/super class public and child class protected -> Not Allowed
+
+
+
+Parent Class PUBLIC --> Child Class PROTYECTED === NOT ALLOWED, CAN;T DO IT.
+
+
+
+2 - Return Type must be same except **Co-variant**.
+
+* **return type** of method inside parent class and inside child class both should be **same**
+
+
+
+3 - Exactly **same** **method names** should be there in both in parent and in child also.  Name of method inside parent and child must be same while following to method overriding.
+
+
+
+4 - no. of Args, type of Args, and order of Args must be **same in both**.
+
+
+
+5 - Exception - Same or child class.
+
+
+
+* Co-variant Return type - returning the whenever  we are overriding the return type can be child of super method return type.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 28\_21st April
+
+
+
+***100% INTERVIEW SPECIFIC***
+
+
+
+Why Multiple Inheritance don;t exists in java -
+
+
+
+* A child cannot have more than one parent. A child can;t have 2 parent. otherwise compiler would confuse to which to access.
+* It's for avoiding Ambiguity. If there will be both Parent classes then child class would confuse which method have to access.
+* when ww override the methid then the child clas inharrited parent functionality andif botht he parent classes having the smae method name then child class badly consufes to whom to access. - and that's why java doens not allow multiple inheritance.
+* On observing its structure it looks like DIAMOND and this scenario is called - **DEATH OF DIAMOND** or **DIAMOND PROBLEM** in java.
+* so this multiple inheritance functionality doesn't work in java using classes, but using Interfaces we'll able to develop this.
+
+
+
+class HybridAccount extends CurrentAccount, SavingAccount // Not allowed Multi Level Inheritance
+
+
+
+Method Overloadingg -
+
+
+
+* In Method Overriding its only possible when there is Inheritance, while method Overloading can happen within the class only.
+* In method Overloading - Multiple versions of the Method cna be present in the same class.
+
+
+
+why method Overloading -
+
+* For giving the flexibility to the users. to work with the same method if created already by the usage or need of parameters.
+
+
+
+Rules of Method Overloading -
+
+
+
+1 - Same Method name;
+
+2 - Different Args, Diff Order of Srgs, Differ Number of Args.
+
+3 - There is not such riles like Overloading ... ant Access Modifier can be used freely, any return can be used easily in Method Overloading Concept.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 29\_22nd April
+
+
+
+Casting -
+
+
+
+general Object Creation Syntax looks like -
+
+
+
+&#x09;	GSTInvoice gstInvoice = new GSTInvoice(); // simple object creation
+
+&#x09;// 	Type       RefName    =  Actual Object
+
+&#x09;//  	int 	   amount     =  100;
+
+
+
+\---------
+
+* Parent class refers to Child Class Object. Its internally works like -
+
+
+
+class InvoiceManagement // parent class
+
+{
+
+}
+
+
+
+class GSTInvoice extends InvoiceManagement // child class extended from parent class
+
+{
+
+}
+
+
+
+InvoiceManagement invoiceManagement = new GSTInvoice() // this is called as - "auto up casting" OR
+
+InvoiceManagement invoiceManagement = (InvoiceManagement)new GSTInvoice();  // manually doing upskilling  - not required
+
+
+
+* when we want Child Class refers to Parent Class, then it'd like -
+
+
+
+GSTInvoice gstinvoice2 = (GSTInvoice) new InvoiceManagement(); // this is called - "Down Casting"
+
+\---------
+
+
+
+Polymorphism -
+
+
+
+Why this overriding concept is called RunTime Polymorphism -
+
+
+
+class Delivery {
+
+&#x09;public void doDeliver() {
+
+&#x09;	System.out.println("Delivery.doDeliver()");
+
+&#x09;}
+
+}
+
+class EComDelivery extends Delivery {
+
+&#x09;@Override
+
+&#x09;public void doDeliver() {
+
+&#x09;	System.out.println("EComDelivery.doDelivery()");
+
+&#x09;}
+
+}
+
+public class RuntimePolymorphism {
+
+&#x09;public static void main(String\[] args) {
+
+&#x09;	Delivery del = new EComDelivery(); // parent class can refer child class object (Auto Up Casting)
+
+&#x09;	del.doDeliver();//EComDelivery.doDelivery() - Compile type it check + it call based on actual object.
+
+
+
+&#x09;}
+
+
+
+}
+
+
+
+* Here in the syntax -  Parent class referring to Child class object.
+
+Overrding is here which doDeliver() method will execute -
+
+
+
+"Delivery del = new EComDelivery();
+
+del.doDeliver();"
+
+
+
+Delivery del  - at the time of compilation this method (del.doDeliver()) will call in Delivery del this class  (becuase compiler even doen;t know what is object from del.doDeliver() it'd go to the Delivery class(Parent Class) first)- compilation, while
+
+new EComDelivery() - at the time of running, it'll call the method from this class (child class)(new EComDelivery()) - in Runtime
+
+
+
+* if i remove the same method(del.doDeliver()) from the child class then Compilation will take place successfully and the run call will be from parent class(because the same method din't find in the child class)
+
+
+
+* Here which methd t0 be called that decision is happenning over running - so it's called Runtime Polymorphism OR Dynamic Method Didpatch.
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Day 30\_23rd April
+
+
+
+Compile Time Polymorphism -
+
+
+
+* which method have to take, this decision will happen at the time of compilation only, this is Method Overlaoding and called as Compiletime Polymorphism
+* Method Overloading is the best example of Compiletime Polymorphism.
+
+
+
+
+
+Abstraction -
+
+
+
+* Explose something which is require, not anything unnecessary or unessentials
+* Abstraction in Java  is Hiding Implementations - SHowing only required and essential information to user rest all backend part is hidden within the functionalities inside classes.
+* The main difference between Encapsulation \& Abstraction is; - Encapsulation is responsible for hiding particular data/method, while Abstraction is responsible for hidoing the entire implemetantions. It only shows whatever is rewuired and usefuyl to the users, means other classses will not be able to see your code.
+
+
+
+* In Abstraction we provide essential functionalities to called which can expose and necessary for everyone, but in backend there is some internal functionalities which is not useful  for all other classes/users.. so this internal functionalities is hiding by making them private and only visible to respective classs...This is hiding implementation for which Abstraction stands for.
+
+
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 31\_24th April
+
+
+
+Revision Day – Reality Check 1
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&#x09;
+
