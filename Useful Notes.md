@@ -857,6 +857,7 @@ Day 13\_30th March
 
 
 * Kabhi bhi mehtod ka object nhi bnata hamesha class ka =object bnta he... and vo class ka object methods ko access krta he
+* Jis method ko accee krna chahte h, to vo method jis class me h uss class ka object bnta he.
 
 In Eclipse -
 
@@ -886,7 +887,7 @@ Day 15\_01st April
 
 
 
-Object Creation -
+Constructor \& Object Creation -
 
 
 
@@ -1030,15 +1031,15 @@ Day 20\_09th April
 
 
 * Heap - In object in Java Store in **Heap**.
-* String Constant Pool (SCP) - Inside the heap memory itself. where string classs objects stored..
-* MetaSpace - anything which is static in java loads in metaSPace.
+* String Constant Pool (SCP) - **Inside** the **heap** memory **itself**. where string classs objects stored..
+* MetaSpace - anything which is **static** in java loads in **metaSPace**.
 * Stack - Local variables/Method  Call/main inside the stack in memory.
-* before java 8 version, Meatspace is called as PermGen(Permnant Generation)
-* Garbage Collector responsible for remove unwanted obnjects form the memory.
+* **before java 8** version, Meatspace is called as **PermGen(Permnant Generation)**
+* Garbage Collector responsible for remove unwanted objects form the memory.
 
 
 
-* String  - A bunch of character is called as String in Java. String is a classs in java which will allow us to create String Object.
+* String  - A bunch of character is called as String in Java. String is a class in java which will allow us to create String Object.
 
 
 
@@ -1051,8 +1052,8 @@ Day 20\_09th April
 
 
 
-* == will alwasys compare the memory addresses of the object. if value same then sdame addresses assign in SCP, so if equal then say True.
-* .equals will always compare the content inside string.
+* **==** will alwasys compare the **memory addresses** of the object. if value same then same addresses assign in SCP, so if equal then say True.
+* **.equals** will always compare the **content** inside string.
 
 
 
@@ -1099,6 +1100,7 @@ Day 21\_10th April
 
 
 
+* Concat waali str4ing hmesha heap me jaati h because it created as an Object.
 * If i am addig 2 strings by creating a 3rd string then that 3rdstring wwill be the in HEAP.
 * But when i am adding any 2 strings withing the ""+"" by creating a 3rd new string then this will be store in SCP.
 
@@ -1198,12 +1200,12 @@ Features of OOps?
 
 
 
-* Encapsulation - why it needed ? - Data(Var) Hiding \& Security
+* Encapsulation - why it needed ? - **Data(Var) Hiding \& Security**
 
 On declaring a class public, then withing the same package any of the class can access/Set the value.  Encapsualtions allowing classe and methods to set \& get variable data.
 
-* In good practicdes must be variable pvt, so that other cases cann;t modify or access it..If ceclard variable as public means not following the oops CONCEPT
-* No we want to modify the class, but we dont want to modify by the variable directly, we'll give method to modify - so for this we uses Setters \& getters Methods.
+* In good practicdes **must** be variable **pvt**, so that **others classes** **cann;t** modify or access it..If declared variable as public means not following the oops CONCEPT
+* No we want to modify the class, but we dont want to modify by the variable directly, we'll give **method to modify** - so for this we uses **Setters \& getters Methods**.
 
 \-------------------------------------------------------------------------------------------------------------------------------
 
@@ -1214,7 +1216,7 @@ Day 24\_15nth April
 
 
 * So in Encapsulation - Declaring Data(Fields/var/attributes) as **Private** and if someone(other classes) **want to modify/read** data, then they will **use public setter** to modify/set the values and **getter to read/get** the values.
-* so if our variable is private then someone can't read or change it directly by a1.balance = 15000; If we or someone wnat to do any modification then can be done by using getters \& Setters.
+* so if our variable is private then someone can't read or change it directly by a1.balance = 15000; If we or someone wnat to do **any modification** then can be **done by** using **getters \& Setters**.
 
 
 
@@ -1550,11 +1552,291 @@ Day 31\_24th April
 
 
 
-Revision Day – Reality Check 1
+Revision Day – Reality Check
 
 
 
 \-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 32\_27th April
+
+
+
+
+
+Abstract -
+
+responsible for High Level(What we are doing only ........... How we are doing -Not Interested)
+
+
+
+* Let say I have Pay Method(), so what inside this only matters, How it;s happening - doesn't matter.
+* when ww are forcing to child class to implement the method which is within parent class.
+* Here we are overrding the methods in the child class using abstract class \& method.
+* Abstract class is responsible to force other class for implementing abstract method (within the abstract class) - that you must have to implement this abstract(pay) method.
+* When we wnat that **parent class methods** **must be implemented for the child class we use abstract**(saaar/bhaav/overall uddeshy) method. We want to force to child classes to include the parent class method.
+* **RBI(Parent Class) announced KYC(Method) is mandatory for all the banks(Child Classes).**
+* If we proceed **without abstract** keyword for method, then it **becomes optional** - now parent is not forcing to childs to implement that method. Without ABSTRACT keyword Now it's become optional to child class, it depends on they either they implement the rule or not.
+* Its kind of Contract - if you are working for me you must have to follow my orders.
+* If even **after declaring abstract** methid inside abstract class and **child classes** arenot implementing or **not following** the rules mean the **system** has been **failed**.
+* Inside Abstract Class ,while declaring Abstract Method, then it should not contain the body .. it must be only declared as abstract with method name inside abstract class.
+
+
+
+abstract class BusBookingApplication {
+
+&#x09;public abstract void offerPrices();// // abstract method - don't initialize the body, just declare the method.
+
+}
+
+
+
+* child class must have to follow the abstract declared method -
+
+class RedBus extends BusBookingApplication {
+
+&#x09;@Override
+
+&#x09;public void offerPrices() {
+
+&#x09;	System.out.println("It's officially announced by govt.. we must have to follow");
+
+&#x09;}
+
+}
+
+
+
+* So from now  ... if we want must having following features in child class then start making parent class as abstract
+* We were defining both - What ? \& How? (Parent class method declaration,initializtions \& child class also ) this known as **CONCRETE METHOD. When** What ? is not defined and how is defined - this is **ABSTRACT METHOD**.
+* In Abstract - Parent class be like here "Hmara Kaam h niyam banana, Kya krna he Kese krna h your responsibility we are Higher Authorities at Higher Level " , and child class be like - "Jo bhi krna h hme hi krna h, Authorities (unhone) to rules bana diyye";
+
+
+
+* **Abstract class** can **have both**  - **(Abstract) + (Non-Abstract** - Method with body). Till now we used Concrete Methods to define the What \& How both. Means What \& How combined together. (Method \& Method Body). Make sure Abstract Method must bt implemented by child classes .
+* **Concerete Methods** are Normal Method - if you want to override then can be ... but the Abstract method having both(Abstract(Only method declared, How **NOT**) + Non Abstract Methods(method declared,initliazed - **What Part**)) and abstract must be initialized by child(HOW PART)
+
+
+
+* we **cannot create the OBJETC of ABSTRACT CLASS**, becuase class itself is **not fully completed**, **not having full funcitonalities**(In Abstract method, no body).
+* Abstract CLass Cannot be **Create or Cannot be Instanciated**. Java does not allow for this - can;t create the object of Abstract class becuase class itself is **INCOMPLETE. Abstract class ia like a blueprint for the child classes,**
+* Abstract class will **have constructor**.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Day 33\_28th April
+
+
+
+Interface in Java -
+
+
+
+* Whenever we want **100% contract** mean whatever we **write/set** **must be implemented** by all the classes. Then Interface is used for this.
+* Every method/functionality whatever created is must be used by all the child classes or rest of classes, as interface declared.
+* In **Abstract** there can be **both** - **Abstract + Non-Abstract methods**, **but** in **Interface** there **must be 100% abstract for all**.
+
+
+
+We are discussing for Interface **before Java 8** -
+
+
+
+* Usually in industry while declaring interface, in Interface name uses INameOfTheInterface (IBanking)	.
+* In Inetrface there is **only What** Part.., **No How Part** exists. // Just method declaration, not the initialization of it.
+* After declaring Interface, we can directly write the method name \& Interface , **By default** **all** the **methods** are **always Public \& Abstract** in Interface.
+* Why Interface - to force to all rest classes, to avoid the conflicts related like - Method name and all, one clear set of rule which is applicable everywhere.
+* All the Overriding rules will be applicable.
+
+
+
+we've done -
+
+In **concrete** class - **(What + How)** \[Method Declaration + Initializn  compulsory]
+
+In **Abstract** class - **What/ (What + How)** \[Abstract + Non-Abstract Class - Method Declaration for Abstract \& Methoddeclan as well as Initln for Non-Abstract]
+
+Now In **Interface** - **What(100%)** \[Abstract only - Method Declaration only]
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Day 34\_29th April
+
+
+
+Problem with Java Interface before 8 and fixing in version 8-
+
+
+
+* when we create an Interface, that means all the rest classes must follow the all the rules. But what when **along with the development** or **as per the timelines**  **new features** appears and want to add inside that, then on adding that particular feature **it'd be add** in the **entire system** as per the interface rule for **100% force** and implementations by all the classes... so here we want to **add particular functionality** and want to **give option to all classes** who want to use this function or not.
+
+
+
+* By giving to use or create particular functionality(new class) **no need to changes** in the **entire interface**. By using **Default method** we can give facility to the classes whether they want to implement this new functionality or not , rest all created classes/methods will definitely followed by entire system or all the classes as per interface rule but along with that compulsory method/functionalities here is **an option for adding this new functionality inside class by overriding it**. Ex.  - Payment application, then after 2015 new option of PassbookPrint - but it's optional those who can afford it can add it by overriding and inside default method, need to make compulsory for all the classes.
+
+
+
+* using this default method functionality saari classes ko compulsory modify nhi krna pdhega, only that classes can modify which have requirements..**no forcing or 100% contract** as happens in inheritance usually.
+
+
+
+* SO **features** added in **java 8** are - use of **default method**, and achieving **Backward Compatibility**. We have the option to override we can change, if already created interface with instances method is fixed then for optional particular functionality we can override and use default.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 35\_30th April
+
+
+
+***101% interview focused***
+
+
+
+Another one functionality introduced in Java 8 -
+
+
+
+
+
+* what if inside each class we have to perform compulsory functionality from respective child classs. (For every ecommerce platform like Amazon, FLipkart they need to send heir own invoice - so al the child classes will be right there code and same code for all but individually written)
+
+
+
+* So to avoid this issue - to **avoid this code duplicasy** and **common functionality**, suggested to use **static method in interface**. By declaring method **static** , we can use optinaly in any of the child class.  Adding the static removes the code deplicasy from the classes and saves - time,space,trsut,memory and everyuthing as well as provides reuability.
+
+
+
+* So, in **Java 8, two functionalities** introduces - **1st** is **Default**, responsible for **Backward Compatibility**, and **2nd** is **Static** for **achieving code common utility functionality**.
+
+
+
+
+
+Problesm with this Interface(Java 8) and fixing it in Java 9 -
+
+
+
+Within interface even after using default ot static methods, there is again code duplicasy issues. Inside Invoise send (functionality) static method there is again in built codes for -
+
+(Connect to Server (50 lines of code)--> init print --> write to file --> send to customer(25)). Let say requirement like send the invoice again - now ther eis again need to impleemnt the code.
+
+
+
+&#x09;public static void printInvoicePDF() // common Utility functionality - those who want they can
+
+&#x09;{
+
+&#x09;	// 200 lines of code
+
+&#x09;	//(Connect to Server (50 lines of code)--> init print --> write to file --> send to customer(25))
+
+
+
+&#x09;}
+
+
+
+&#x09;public static void sendNotification()
+
+&#x09;{
+
+&#x09;	//(Connect to Server (50 lines of code) --> Draft Email --> send to Customer(25)
+
+&#x09;}
+
+
+
+
+
+* &#x09;private static connectServer() // its not allowed with java 8 or 1.8, can;t declare private method inside interface's functionalities
+
+&#x09;{
+
+
+
+&#x09;}
+
+
+
+
+
+**by changing the version - Java 9 or 1.9 -**
+
+
+
+
+
+&#x09;	public static void printInvoicePDF()
+
+&#x09;{
+
+&#x09;	connectServer();
+
+&#x09;	notifyCustomer();
+
+&#x09;
+
+&#x09;}
+
+
+
+&#x09;public static void sendNotification()
+
+&#x09;{
+
+&#x09;	connectServer();
+
+&#x09;	notifyCustomer();
+
+&#x09;}
+
+
+
+&#x09;private static void connectServer() // from java 1.9 or 9 we can declare private to the methods. So here veriosn changes to java 9 and declared private successfully.
+
+&#x09;{
+
+
+
+&#x09;}
+
+
+
+&#x09;private static void notifyCustomer() // from java 1.9 or 9 we can declare private to the methods. So here veriosn changes to java 9 and declared private successfully.
+
+&#x09;{
+
+
+
+&#x09;}
+
+* Private method can be both Static as well as Non Static. when need to use in static prvate methids then use as static and when without static .. like inside fdefault methods(default can also have some innternal funcitonalities) then can be used as Non-Static.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 

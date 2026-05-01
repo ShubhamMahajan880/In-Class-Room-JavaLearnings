@@ -22,6 +22,7 @@ public class BlockUnderstanding {
 		System.out.println("Inside Main Method");
 		BlockUnderstanding bU = new BlockUnderstanding();
 		BlockUnderstanding bU1 = new BlockUnderstanding();
+		BlockUnderstanding bU2 = new BlockUnderstanding(100);
 	}
 
 	static {

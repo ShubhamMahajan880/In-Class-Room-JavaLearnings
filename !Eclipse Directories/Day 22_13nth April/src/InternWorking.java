@@ -23,9 +23,10 @@ public class InternWorking {
 		 */
 
 		String s5 = s4.intern();// intern method is uses for creating a copy of HEAP object into SCP.
-		System.out.println(s4 == s5);// true - becuase using intern one copy of that object in HEAP also created in
-										// SCP
+		System.out.println(s4 == s5);// true - becuase using intern one copy of that object in HEAP also created in SCP
 
+		System.out.println(s4 == s6);
+		System.out.println(s4.equals(s6));
 		/*
 		 * When we create an string like String s1 = new String("name") - then it
 		 * created in HEAP as well as in SCP also ... but in somecases String only

@@ -1,8 +1,8 @@
-Java Syllabus Covered till now - 
+Java Syllabus Covered till now -
 
 
 
-**Intro, Basics to understand** 
+**Intro, Basics to understand**
 
 D1) Java Intro, Installation, First program, Compilation \& Execution
 
@@ -20,13 +20,13 @@ D7) What is  Static, Local and Instance variable? When to use what and why?
 
 D8) Operators in java  - Assignment,  Relational \& Logical
 
-D9) Revision of till now. Method Creation. Using Static and W/O using Static. 
+D9) Revision of till now. Method Creation. Using Static and W/O using Static.
 
 D10) Access Modifiers in java , when to use which one. Packages in Java, How to use? Cases of Same Package and Different Package? How to Import Package ?
 
-D11) Control Flow Statement - IF-Else, IF-Else IF-Else. 
+D11) Control Flow Statement - IF-Else, IF-Else IF-Else.
 
-D12) Loops in Java  - For, While, Do-While. Input from the Scanner Class. 
+D12) Loops in Java  - For, While, Do-While. Input from the Scanner Class.
 
 
 
@@ -74,15 +74,21 @@ D28) Multiple Inheritance - why it's  now available in java? Method Overloading.
 
 D29) Casting in Java - Upcasting \& Downcasting Concepts. Polymorphism, its types and Runtime Polymorphism.
 
-D30) Compile Time Polymorphism, Abstraction, OOPS Complete. 
+D30) Compile Time Polymorphism, Abstraction, OOPS Complete.
 
 D31) Full Revision - One Short \& Reality Check.
 
 
 
+**Abstract, Non-Abstract, Interface - Versions \& Solutions.**
 
+D32) Abstract Class, Concrete Method, Abstract \& Non-Abstract Method
 
+D33) Interface in Java, before Java 8.
 
+D34) Java 8 Interface Problem \& Solution.
+
+D35) Fixing Java Interface 8 
 
 
 
@@ -116,6 +122,7 @@ Some Notes while revising or learnings after errors  -
 
 NOT other class members
 
+* Sttring Builder \& Buffer Difference.
 
 
 
@@ -123,6 +130,9 @@ NOT other class members
 
 
 
+Doubts -
 
+in IIB \& SIB  - first prirority to  this/super then to IIB, so its going on this but not executing its statement, its going on ths and returning back to iib first.
 
+Why abstract class \& Interface ka object nhi bna skte ?
 

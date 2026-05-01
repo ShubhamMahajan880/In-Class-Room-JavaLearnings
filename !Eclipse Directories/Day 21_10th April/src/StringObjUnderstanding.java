@@ -13,10 +13,10 @@ public class StringObjUnderstanding {
 		System.out.println(s1.equals(s3));// false
 
 		String s5 = new String("microsoft");
-		System.out.println(s1 == s5);//// false
+		System.out.println(s1 == s5);//// false -
 		System.out.println(s1.equals(s5));//// false
 
-		System.out.println(s3 == s5);// false - bhle hi using new ek copy SCP me bni ho leking HEAP waala to new hi hena to uska address not equal to SCP waale ka address
+		System.out.println(s3 == s5);// false - bhle hi using new ek copy SCP me bni ho leking HEAP waala to new hi hena to uska address not equal to SCP waale ka address. becuase memories are different one in HEAP and one in Scp.
 		System.err.println(s3.equals(s5));//true
 
 		String s55 = new String("microsoft");
@@ -27,12 +27,13 @@ public class StringObjUnderstanding {
 
 		s1.concat("Hyderabad");
 		System.out.println(s1);// can't do it, because string is Immutable.
-		String s4 = s1.concat("Bangalore"); // S4 - In heap and content is -MicrosoftBangalore
+		String s4 = s1.concat("Bangalore"); // S4 - it's a new object and In heap, content is -MicrosoftBangalore
 		System.out.println(s4);//MicrosoftBangalore
 
 		String s7 = "MicrosoftBangalore"; // S7 - In SCP and content is - MicrosoftBangalore
-		System.out.println(s4 == s7);// false
-
+		System.out.println("S7 & S4  Observations");
+		System.out.println(s4 == s7);// false - becuase s4 created by concat of s1- so its a new object and created in heap while s7 is in SCP.. so address not equal.
+		System.out.println(s4.equals(s7));//true
 		String s6 = s1.concat("Bangalore");
 		System.out.println(s4);// MicrosoftBangalore
 
@@ -48,8 +49,8 @@ public class StringObjUnderstanding {
 		System.out.println(s12); // BangaloreIndia - s12 will be created in heap
 
 		String s13 = "BangaloreIndia";
-		System.out.println(s12 == s13);// false because s13 is litteral and in SCP, while s12 is in Heap and as a
-		// object
+		System.out.println(s12 == s13);// false because s13 is litteral and in SCP, while s12 is in Heap and as a object
+		System.out.println(s12.equals(s13));//true
 
 		String s14 = "Bangalore" + "India"; // compile Time Optimization , only single object will be created which is
 		// Liternal and in SCP.
