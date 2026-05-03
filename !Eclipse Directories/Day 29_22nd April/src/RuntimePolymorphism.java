@@ -1,4 +1,5 @@
 
+
 class Delivery {
 	public void doDeliver() {
 		System.out.println("Delivery.doDeliver()");
@@ -23,9 +24,10 @@ public class RuntimePolymorphism {
 	}
 
 	/*
-	 * in Delivery del = new EComDelivery(); Delivery del = phle compile time pr
-	 * yaha check hoga ... it will be on the base of Delivery class then new
-	 * EComDelivery() - at time of runtime yaha check hoga. EComDelivery me - now
+	 * in Delivery del = new EComDelivery();
+	 * Delivery del = phle compile time pr
+	 * yaha check hoga ... it will be on the base of Delivery class then
+	 * new EComDelivery() - at time of runtime yaha check hoga. EComDelivery me - now
 	 * here can be anything - child or class whatever whoose object create will
 	 * check always on run time
 	 *

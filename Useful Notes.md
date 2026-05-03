@@ -1234,7 +1234,7 @@ Inheritance -
 
 
 
-* Private methods can't be available in the child classed. Make sure to do them public.. so they can be accessible and used by outside classes. Other than private everything all methidss are avaibale in Inheritance.
+* Private methods can't be available in the child classed. Make sure to do them **public**.. so they can be accessible and used by outside classes. Other than private everything all methods are variable in Inheritance.
 
 
 
@@ -1254,7 +1254,7 @@ Inheritance -
 
 
 
-* Using Inheritance we no neefd towriote the functionalities form scratch we cn drorectly use them if gthey are available in the parent or the object class.
+* Using Inheritance we no need to write the functionalities form scratch we cn drorectly use them if gthey are available in the parent or the object class.
 * Method Overriding - When child class want to use his own funcitnality instead of given parent class functionality then can be done by adding some extra informationnor operations by his own and this concept is called as Method Overriding.
 * Let say - Parents said Hii , but child wants to say Hello. Then in Parent Class having statement Hii, Child class crated his own statement Hello within the **same method**.
 * why overriding - when child dont want to use the given functionality of parent class... child want to add some more features or change something within the same class.
@@ -1369,7 +1369,7 @@ Rules of Method Overloading -
 
 2 - Different Args, Diff Order of Srgs, Differ Number of Args.
 
-3 - There is not such riles like Overloading ... ant Access Modifier can be used freely, any return can be used easily in Method Overloading Concept.
+3 - There is not such riles like Overriding ... ant Access Modifier can be used freely, any return can be used easily in Method Overloading Concept.
 
 
 
@@ -1485,7 +1485,7 @@ public class RuntimePolymorphism {
 
 * Here in the syntax -  Parent class referring to Child class object.
 
-Overrding is here which doDeliver() method will execute -
+Overrding is here **which** doDeliver() method will execute -
 
 
 
@@ -1495,17 +1495,17 @@ del.doDeliver();"
 
 
 
-Delivery del  - at the time of compilation this method (del.doDeliver()) will call in Delivery del this class  (becuase compiler even doen;t know what is object from del.doDeliver() it'd go to the Delivery class(Parent Class) first)- compilation, while
+Delivery del  - at the time of **compilation** this method (del.doDeliver()) will call in Delivery del this class  (becuase compiler even doen;t know what is object from del.doDeliver() it'd go to the Delivery class(Parent Class) first)- compilation, while
 
-new EComDelivery() - at the time of running, it'll call the method from this class (child class)(new EComDelivery()) - in Runtime
-
-
-
-* if i remove the same method(del.doDeliver()) from the child class then Compilation will take place successfully and the run call will be from parent class(because the same method din't find in the child class)
+new EComDelivery() - at the **time of running**, it'll call the method from this class (child class)(new EComDelivery()) - in Runtime
 
 
 
-* Here which methd t0 be called that decision is happenning over running - so it's called Runtime Polymorphism OR Dynamic Method Didpatch.
+* if i **remove** the same method(del.doDeliver()) **from the child class** then Compilation will take place successfully and the run call will be from parent class(because the same method din't find in the child class)
+
+
+
+* Here which methd t0 be called that decision is happenning over running - so it's called **Runtime Polymorphism** OR **Dynamic Method Didpatch**.
 
 \-------------------------------------------------------------------------------------------------------------------------------
 
@@ -1522,7 +1522,7 @@ Compile Time Polymorphism -
 
 
 * which method have to take, this decision will happen at the time of compilation only, this is Method Overlaoding and called as Compiletime Polymorphism
-* Method Overloading is the best example of Compiletime Polymorphism.
+* **Method Overloading is the best example of Compiletime Polymorphism.**
 
 
 
@@ -1581,7 +1581,7 @@ responsible for High Level(What we are doing only ........... How we are doing -
 * If we proceed **without abstract** keyword for method, then it **becomes optional** - now parent is not forcing to childs to implement that method. Without ABSTRACT keyword Now it's become optional to child class, it depends on they either they implement the rule or not.
 * Its kind of Contract - if you are working for me you must have to follow my orders.
 * If even **after declaring abstract** methid inside abstract class and **child classes** arenot implementing or **not following** the rules mean the **system** has been **failed**.
-* Inside Abstract Class ,while declaring Abstract Method, then it should not contain the body .. it must be only declared as abstract with method name inside abstract class.
+* Inside Abstract Class ,while declaring Abstract Method, then it should **not contain** the **body** .. it must be **only declared as abstract** with method name inside abstract class.
 
 
 
@@ -1610,13 +1610,13 @@ class RedBus extends BusBookingApplication {
 
 
 * So from now  ... if we want must having following features in child class then start making parent class as abstract
-* We were defining both - What ? \& How? (Parent class method declaration,initializtions \& child class also ) this known as **CONCRETE METHOD. When** What ? is not defined and how is defined - this is **ABSTRACT METHOD**.
+* We were defining both - What ? \& How? (Parent class method declaration,initializtions \& child class also ) this known as **CONCRETE METHOD. When** **What** ? is **defined** and **how** is **not defined** - this is **ABSTRACT METHOD**.
 * In Abstract - Parent class be like here "Hmara Kaam h niyam banana, Kya krna he Kese krna h your responsibility we are Higher Authorities at Higher Level " , and child class be like - "Jo bhi krna h hme hi krna h, Authorities (unhone) to rules bana diyye";
 
 
 
 * **Abstract class** can **have both**  - **(Abstract) + (Non-Abstract** - Method with body). Till now we used Concrete Methods to define the What \& How both. Means What \& How combined together. (Method \& Method Body). Make sure Abstract Method must bt implemented by child classes .
-* **Concerete Methods** are Normal Method - if you want to override then can be ... but the Abstract method having both(Abstract(Only method declared, How **NOT**) + Non Abstract Methods(method declared,initliazed - **What Part**)) and abstract must be initialized by child(HOW PART)
+* **Concerete Methods** are Normal Method - if you want to override then can be ... but the Abstract method having both(Abstract(Only method declared, How **NOT**) + Non Abstract Methods(method declared,initliazed - **What Part**)) and **abstract must be initialized by child**(HOW PART)
 
 
 
@@ -1653,7 +1653,7 @@ We are discussing for Interface **before Java 8** -
 * Usually in industry while declaring interface, in Interface name uses INameOfTheInterface (IBanking)	.
 * In Inetrface there is **only What** Part.., **No How Part** exists. // Just method declaration, not the initialization of it.
 * After declaring Interface, we can directly write the method name \& Interface , **By default** **all** the **methods** are **always Public \& Abstract** in Interface.
-* Why Interface - to force to all rest classes, to avoid the conflicts related like - Method name and all, one clear set of rule which is applicable everywhere.
+* Why Interface - to **force** to all rest classes, to avoid the conflicts related like - Method name and all, one clear set of rule which is applicable everywhere.
 * All the Overriding rules will be applicable.
 
 
@@ -1690,7 +1690,7 @@ Problem with Java Interface before 8 and fixing in version 8-
 
 
 
-* using this default method functionality saari classes ko compulsory modify nhi krna pdhega, only that classes can modify which have requirements..**no forcing or 100% contract** as happens in inheritance usually.
+* using this default method functionality saari classes ko compulsory modify nhi krna pdhega, only that classes can modify which have requirements..**no forcing or 100% contract** as happens in interface usually.
 
 
 
