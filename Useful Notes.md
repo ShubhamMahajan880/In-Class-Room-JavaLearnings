@@ -1836,21 +1836,78 @@ Within interface even after using default ot static methods, there is again code
 
 
 
+Day 36\_04th MAY
+
+
+
+Can we Solve Multiple Inheritance problem by Inheritance - 
+
+
+
+* Yes, because in Interface(In java 7 or before Java 8), there is no method body only method declaration(What part)(abstract method), so child class won't confuse and call the same method from any of the parent.
+* Implementing Multiple Inheritance using Interfaces - right now using Interface, able to performing multiple Inheritance untill methods are only abstract(Only What) and not initalized(How)");
+
+
+
+* But this kind of implementation of Multiple Inheritance was only valid befor java 8 version, becuase from java 8 - we used to create Default Methods also, so here the method's body exists(How Part/method initialization). So for it while overriding the same method from the main class/child class then can use .super method and clearify which parent's method want to implement. 
+
+
+
+Syntax - NAMEOFINTERFACE.super.NAMEOFMETHOD
+
+
+
+@Override
+
+public void methodName()
+
+{
+
+&#x20; PARENT1.super.methodName();
+
+&#x20; PARENT2.super.methodName();
+
+}
 
 
 
 
 
+Types of Interface - There 4 types of Interfaces -
+
+
+
+1 - Normal Interface --> Used so far, simple Inheritance and all similar stuff
+
+2 - Marker Interface --> Empty Interface - Interface w/o any method .
+
+3 - Functional Interface 
+
+4 - Nested Interface - Not much used in Industry
 
 
 
 
 
+Cloning in Java - Can clone Java Objects.
 
 
 
+* When i want to create another one's object with the same value. So instead of crreating differetn differet object again and again, i'll use **clone method**.
+* clone() is an in built method in object class. 
+* anyone can't clone directly, need to give the permission that particular object is cloneable or not. (Aadhar, Xerox Example). 
+* For this inbuild and hidden cloning permission in java we use Marker Interface.
+* In Java, there are many Inbuilt Marker Interface, one is - Cloneable Interface
+* By implementing cloneable Interface, the class is giving permission to its object and allow for cloning. If not implementing the cloning interface then it won't allow to clone object and giving error.
+* Cloning is a risky activity.. it should only implement when we really want to allow objects to clone(or make a copy of same person/name/string in a different object)
+* Cloning is a kind of special activity or allows special control.
+* So, in java when we want to perform any special activity or control to special activity, then need to use Marker Interface to giving the permissions. 
+* If we want to check to any object that it is of what type use instanceof operator. (what is instance of object/kis type ka object he - cloneable or something). If the class is implementing ang interface means the class is that type of interface. 
+* Serialization is another kind of critical activity we are not allowed to perform and uses Serializable Interface
 
 
+
+\-------------------------------------------------------------------------------------------------------------------------------
 
 
 
