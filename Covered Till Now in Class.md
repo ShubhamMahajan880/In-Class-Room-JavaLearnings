@@ -88,11 +88,21 @@ D33) Interface in Java, before Java 8.
 
 D34) Java 8 Interface Problem \& Solution.
 
-D35) Fixing Java Interface 8 
+D35) Fixing Java Interface 8
 
 
 
+**Multiple Interitance, Types of Interface - Normal, Functional, Marker, Lambda Expression, Exception Handling.**
 
+D36) Multiple Inheritance using Interface, Types of Interface, Marker Interface - Cloneable, Serializable
+
+D37) Custom Created Marker Interface, Functional Interface 
+
+D38) Functional Interface - Lambda Expression
+
+D39) Exceptional Handling - Intro and Uses
+
+D40) Exceptional Handling - types, Parent exception classes and child exception classes. Diff b/w - Error \& Exception.
 
 
 

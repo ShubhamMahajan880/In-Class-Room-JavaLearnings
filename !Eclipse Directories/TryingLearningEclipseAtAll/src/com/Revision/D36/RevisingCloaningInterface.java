@@ -16,6 +16,7 @@ public class RevisingCloaningInterface implements Cloneable {
 	}
 
 	@Override
+
 	public RevisingCloaningInterface clone() throws CloneNotSupportedException {
 		return (RevisingCloaningInterface) super.clone();
 	}

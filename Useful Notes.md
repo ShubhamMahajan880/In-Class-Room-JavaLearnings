@@ -32,7 +32,7 @@ class HelloWorld
 
 1\) For compilation always use the command in the same directory -
 
-\- Javac is the compiler responsible for compiling the file. We are asking for compilation by using javac
+\- Javac is the compiler responsible for compiling the file. We are **asking for compilation** by using javac
 
 \- javac saying compile and check this file with .java
 
@@ -44,7 +44,7 @@ E:\\Java This Side\\Day 1>javac Helloworld.java
 
 
 
-2\) aways use write naming convention while crating the class. Must be first letter capital and secondone too which is subsequent
+2\) aways use write naming convention while crating the class. Must be **first letter capital and second one too** which is subsequent
 
 
 
@@ -68,7 +68,7 @@ Day 2:
 
 Day 3:
 
-\- When there is only empty class created within program and i am saving the .java file and compiling with compiler then compilation takes place, even no main method, compilation takes place BUT BUT BUT Exectuin is not possible as there is no MAIN METHOD. only COMPILATION happen
+\- When there is only empty class created within program and i am saving the .java file and compiling with compiler then compilation takes place, even no main method, compilation takes place **BUT BUT BUT Execution** is **not possible** as there is **no MAIN METHOD**. **only COMPILATION** happen
 
 
 
@@ -136,7 +136,7 @@ class Gateway
 
 
 
-public - without public it can't use outside the class. It;s public means can be used even outside the class within the program. If private or non-public then ca't be used outside the class. If not public then JVM won't able to call. When using public then anybody cna call the method outside the class. Here it's calling by JVM which is outside.
+public - without public it **can't use outside** the class. It;s public means can be used even outside the class within the program. If private or non-public then ca't be used outside the class. If not public then JVM won't able to call. When using public then anybody cna call the method outside the class. Here it's calling by JVM which is outside.
 
 static - In java, a method can be called either by class or by object only. by using static can accessed by class name otherwise not. Accessing the class within the program - Payment. main() - from the payment vlas accessing the main method(function). to call main method - required by object or class which can done using by static keyword.
 
@@ -184,7 +184,7 @@ JVM - A virtum machine created while running/execution of program .
 
 
 
-\- The name we assgine to method name, class name, variale name is called as - Identifier. An identifier cna newver be a reserved keyword. Can't use special charcaters except \_
+\- The name we assgine to **method name**, **class name**, **variable name** is called as - **Identifier**. An identifier cna newver be a reserved keyword. Can't use **special charcaters except \_**
 
 \-------------------------------------------------------------------------------------------------------------------------------
 
@@ -244,19 +244,19 @@ public static void main(String args\[])
 
 \------------
 
-\- Static belong to ClASS \& Non-Static belongs to Object
+\- **Static** belong to **ClASS** \& **Non-Static** belongs to **Object**
 
-\- varibales must be static here because using in the static class.
+\- variables must be static here because using in the static class.
 
 \- If there is a single line assignment(like defining the variable) then taht is the part of assignment only. Logical part will always within the main method or class
 
-\- Remebr logic will always written withing the main method - its eitherassigning the value or updating the value, its always logical and must be within
+\- Remebr logic will always written withing the main method - its either assigning the value or updating the value, its always logical and must be within
 
 Datatypes -
 
 
 
-\- In Primitive datatypes, if we are n ot assigning anything then by default the value will be 0.
+\- In **Primitive datatypes**, if we are not assigning anything then **by default** the value will be **0**.
 
 Checking Default Outputs when  cvalues are not assigned are -
 
@@ -302,7 +302,7 @@ Day 7\_18nth March
 
 
 
-\- Static belong to class and common for all the objects, Non-static(Instance) belongs to Object and every instance variable has different value and objects
+\- **Static** belong to **class** and **common** for all the objects, **Non-static**(Instance) belongs to **Object** and every instance variable has **different value** and objects
 
 \- Local Variables belongs to method only. (Main method or any method withing the class)
 
@@ -310,7 +310,7 @@ Day 7\_18nth March
 
 
 
-\- By Deault value of Non-Primitive DataTypes are always null
+\- By **Default value** of **Non-Primitive** DataTypes are **always null**
 
 \- Static, Instance and Local.
 
@@ -320,13 +320,13 @@ Instance belongs to object.
 
 
 
-when objkect belongs to the class - its an instance,
+when object belongs to the class - its an instance,
 
 when its common for all - it's static
 
 
 
-\- in static .. primitive have default vbalue as - 0 or 0.00, but when creating local variable within the local method ... it  must be assigned value before usiong ... otherwise throw error , no default value for local declared variables
+\- in static .. primitive have default vbalue as - 0 or 0.00, but when **creating** **local variable** **within** the **local method** ... it  **must be assigned value** before using ... otherwise throw error , no default value for local declared variables
 
 
 
@@ -412,7 +412,7 @@ Oeprators in Java -
 
 Remember in myjavaversion -
 
-userType.equals("GOLD")
+**userType.equals("GOLD")**
 
 \-------------------------------------------------------------------------------------------------------------------------------
 
@@ -568,7 +568,7 @@ Access Modifiers in Java  -
 
 
 
-\- I n java for the variale, if not writing anything means its **default**
+\- I n java for the **variable**, if **not writing anything** means its **default**
 
 \- Private var - responsible for using it **within** the class only, can;t be accessed outside the class or by any other class
 
@@ -586,9 +586,11 @@ Package in Java  - Package can be considered as Folder Structures/Directory for 
 
 \- The naming convention of the package is **reverse** of the company domain wise.
 
-company domain - kodewala.com
 
-Packgae namingconvetion - package com.kodewala
+
+**company domain - kodewala.com**
+
+**Package namingconvetion - package com.kodewala**
 
 
 
@@ -627,7 +629,7 @@ Pvt scope within the class
 
 
 
-Private -> Visible within the class only, other class can;t use it.
+Private -> **Visible within the class only**, other class can;t use it.
 
 Default -> With in Packages(Variable declared deefault\[Amount] in order Class, this will be avaialble in other class with in same packages only
 
@@ -789,7 +791,7 @@ Day 12\_27th March
 
 In Package -
 
-When we want to execte in terms of package, then use . in the same was as the compilation
+When we want to execute in terms of package, then use . in the same was as the compilation
 
 
 
@@ -1840,7 +1842,7 @@ Day 36\_04th MAY
 
 
 
-Can we Solve Multiple Inheritance problem by Inheritance - 
+Can we Solve Multiple Inheritance problem by Inheritance -
 
 
 
@@ -1849,7 +1851,7 @@ Can we Solve Multiple Inheritance problem by Inheritance -
 
 
 
-* But this kind of implementation of Multiple Inheritance was only valid befor java 8 version, becuase from java 8 - we used to create Default Methods also, so here the method's body exists(How Part/method initialization). So for it while overriding the same method from the main class/child class then can use .super method and clearify which parent's method want to implement. 
+* But this kind of implementation of Multiple Inheritance was only valid befor java 8 version, becuase from java 8 - we used to create Default Methods also, so here the method's body exists(How Part/method initialization). So for it while overriding the same method from the main class/child class then can use .super method and clearify which parent's method want to implement.
 
 
 
@@ -1877,15 +1879,17 @@ Types of Interface - There 4 types of Interfaces -
 
 
 
-1 - Normal Interface --> Used so far, simple Inheritance and all similar stuff
+1 - Normal Interface --> Used so far, **simple Inheritance** and all similar stuff
 
 2 - Marker Interface --> Empty Interface - Interface w/o any method .
 
-3 - Functional Interface 
+3 - Functional Interface --> Only one abstract method.
 
 4 - Nested Interface - Not much used in Industry
 
 
+
+2\) - Marker Interface - It's called Marker because its marking something in itself.
 
 
 
@@ -1893,21 +1897,254 @@ Cloning in Java - Can clone Java Objects.
 
 
 
-* When i want to create another one's object with the same value. So instead of crreating differetn differet object again and again, i'll use **clone method**.
-* clone() is an in built method in object class. 
-* anyone can't clone directly, need to give the permission that particular object is cloneable or not. (Aadhar, Xerox Example). 
+* When i want to create another one's object with the same value. So instead of creating different different object again and again, I'll use **clone method**.
+* clone() is an in built method in object class.
+* anyone can't clone directly, need to give the permission that particular object is cloneable or not. (Aadhar, Xerox Example).
 * For this inbuild and hidden cloning permission in java we use Marker Interface.
 * In Java, there are many Inbuilt Marker Interface, one is - Cloneable Interface
 * By implementing cloneable Interface, the class is giving permission to its object and allow for cloning. If not implementing the cloning interface then it won't allow to clone object and giving error.
 * Cloning is a risky activity.. it should only implement when we really want to allow objects to clone(or make a copy of same person/name/string in a different object)
 * Cloning is a kind of special activity or allows special control.
-* So, in java when we want to perform any special activity or control to special activity, then need to use Marker Interface to giving the permissions. 
-* If we want to check to any object that it is of what type use instanceof operator. (what is instance of object/kis type ka object he - cloneable or something). If the class is implementing ang interface means the class is that type of interface. 
+* So, in java when we want to perform any special activity or control to special activity, then need to use Marker Interface to giving the permissions.
+* If we want to check to any object that it is of what type use **instanceof operator**. (what is instance of object/kis type ka object he - cloneable or something). If the class is implementing ang interface means the class is that type of interface.
 * Serialization is another kind of critical activity we are not allowed to perform and uses Serializable Interface
 
 
 
 \-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Day 37\_05th MAY
+
+
+
+
+
+* Marker Interface is responsible for allowing the respective class after implementing marker interface to guving the access or not.
+* We can create our own marker interfaces as per the requiremnets and uses. In the bank account class, we created here a restriction that account details must be invisisble to al until and unless its not required by actual authority see this.
+* In account class, we created our own markerinterface(DataPrintable) which is responsible for hiding the account details if not implemented. On implementing this customly cr4eatdd marker interface(DataPrintable) we can access to details of the bank account class.
+* SOme Standard Makrer Interfaces are -  Cloneable, Serialization. and as per our need we can create custom marker interfaces.
+
+
+
+
+
+3\) Functional Interface - Interface which having **only one abstract method**.
+
+
+
+
+
+* Interface in which only one abstract method is called as Functional Interface.
+* Functional interface uses anotation - @FunctionalInterface - to cross check and varify user must have only one abstract method
+* Functional INterface **can** have **multiple** other **Non abstract/default methods** but there should must be only one Astract Method.
+* Purpose of FUnctional Interface is - to achieve functional programming like Lambda Expression. Functional Interfaces - Runnable, Callable. No confusuion which abstract method's variable is calling using functionl interface there is only one abstract method, so can call directly his varible.
+* Functional Interface is also called as - "**SAM --> Single ABstract Method**".
+* itss all since Java 1.8
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Day 38\_06th MAY
+
+
+
+* In Funcitnal Interface as there is compulsory for one abstract method only. This could be directly in the interface or could be extended. like parent interface or child interface.. on using @FunctionalInterface annotation there can be only one abstract method.
+* Functional Prg4amming - in which we  are interested for what we are doing , How part not interested. Functional Programming - Functional way of writing code.
+* Wheneve using interface then ina  afile there cna be only one public - either class or interface. Both together can;t be.
+
+
+
+**Lambda Expression -**
+
+
+
+* Lambda Expression iaa functional progeamming of writing code in 1-2 lines.
+* Lambda Expression is only possivle whwehn threre is functional interface
+
+
+
+
+
+Perfomed in less lines -
+
+
+
+interface Summing {
+
+&#x09;public abstract int numberSum(int a, int b);
+
+}
+
+
+
+public class TryingSameClass {
+
+
+
+&#x09;public static void main(String\[] args) {
+
+&#x09;	Summing s = (i, j) -> i + j;
+
+
+
+&#x09;	System.out.println(s.numberSum(25, 10));
+
+&#x09;}
+
+
+
+}
+
+
+
+
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Day 39\_07th MAY
+
+
+
+Exception Handling  -
+
+
+
+Exception - is an abnormal situation in the program.
+
+
+
+* Happy Scenario  -> +ve Debugging, successfully debug entire program with all positive and correct cases.
+* NullPointerException - is an exception responsible for exception aresisng because of pointer pointing to the variable which is NULL.
+* Along with these exceptions program got terminated abnormally.
+* Some of the errors/exceptions appear in some cases -
+
+Excpetion - 1) (NullPointerException)- variable is null and pointer/compiler pointing to it.
+
+Exception - 2) - Argument not Passed/Invalid Index
+
+Exception - 3) - NumberFormatException - wrong datatype input
+
+Exception - 4) - ArithmatiicExpressionError - when deviding by zero or somevalue = 0
+
+
+
+* Using Try - that part of code which can give eror or risky part, put inside try block.
+* Using catch - responsible for catching the error part by respective handle and creating object.
+
+
+
+
+
+&#x09;	try {
+
+&#x09;		System.out.println("Before Exception");
+
+&#x09;		System.out.println("length - " + name.length()); // inside try we put risky code which may throw exceptions.
+
+&#x09;		System.out.println("After Exception");
+
+&#x09;	} catch (NullPointerException e) {
+
+&#x09;		e.printStackTrace();
+
+&#x09;		System.out.println("Name is Null");// message which describe the error
+
+&#x09;	}
+
+
+
+&#x09;	System.out.println("Program Ended Successfully");
+
+
+
+o/p -
+
+
+
+Starting the program
+
+Amount is - 200
+
+Before Exception
+
+java.lang.NullPointerException
+
+&#x09;at handling.exceptions.TryCacheUnderstanding.main(TryCacheUnderstanding.java:13)
+
+Name is Null
+
+Program Ended Successfully
+
+
+
+
+
+* using try catch,  we are stopping the abnormal closing of program and implementing successful termination of program by mentioning exceptions too.
+* printStackTrace() - is responsible for showing the error message part(Trace), without using it the output for the above code will (withput Trace)like -
+
+
+
+O/p -
+
+Starting the program
+
+Amount is - 200
+
+Before Exception
+
+Name is Null
+
+Program Ended Successfully
+
+
+
+* In try block we are already writitng the possible risk code, so accorndinglt the catch part will work. Jo error possibly aayega usi ka catch likheneg.. not any random or something, otherwise it won't catch to try.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 40\_08th MAY
+
+
+
+
+
+* When in a class there is exception exists and any other class is using this(exceptional walai class) class's method then other class dont have signal thgat there is an error in accessed class.
+
+
+
+Interview Qun - Difference between **Error \& Exception.**
+
+
+
+* Exception - is try and cache part which can be handle, while **error cannot** be **handle**.
+* Now this class is directly using propreties/methods of another class - but this class don't know na ki in that classs there is exceptions(possible risk) ecists. ths clas dontnhave ahy signal what's happend in previous or accessing class.
+* Exception class is responsibly parent class for all the other possible exceptions. null pointer, arithmetic exception and all exceptions are child of Exception class. which will give the error
+* Exception is universally parent of all other exceptions, so on taking it at first it'll include all other exceptions inside this, which will give the error, so its necessary to use first child exception, parent exception and then gran parent exception.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
