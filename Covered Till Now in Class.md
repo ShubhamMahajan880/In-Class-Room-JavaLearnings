@@ -96,7 +96,7 @@ D35) Fixing Java Interface 8
 
 D36) Multiple Inheritance using Interface, Types of Interface, Marker Interface - Cloneable, Serializable
 
-D37) Custom Created Marker Interface, Functional Interface 
+D37) Custom Created Marker Interface, Functional Interface
 
 D38) Functional Interface - Lambda Expression
 
@@ -145,4 +145,10 @@ Doubts -
 in IIB \& SIB  - first prirority to  this/super then to IIB, so its going on this but not executing its statement, its going on ths and returning back to iib first.
 
 Why abstract class \& Interface ka object nhi bna skte ?
+
+
+
+as you uses .uppercase, .lowercase, .append, .concatenate, .readLine - so what we cna use and which exist ??
+
+
 

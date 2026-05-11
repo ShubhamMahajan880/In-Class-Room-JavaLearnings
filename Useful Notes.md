@@ -2146,6 +2146,68 @@ Interview Qun - Difference between **Error \& Exception.**
 
 
 
+Day 41\_11th MAY
+
+
+
+All the exceptions thrown at runtime. Exceptions are always provide on runtime only/while running program.
+
+
+
+Types of Exception - 
+
+
+
+1. Checked Exception - Exception throws at runtime, but compiler known about the exception(and force us to handle). These are the direct child of Runtime Exception.
+
+
+
+Class.forName("NAMEOFTHEPACKAGE.NAMEOFTHECLASS"); - is responsible for loading the class dynamically into program
+
+
+
+* by using this Class.forName(checked excpetion) - compiler knowns about this exception
+* so on using these checked exceptions - compiler is aware of exception and not allowing for such erorrors/exceptions and handle it or allow it using try cache accordingly.
+* Some Checked Exception are - 
+
+FileNotFoundException - responsible when firle didn't find/load inside program
+
+IoOException - 
+
+
+
+* using BufferedReader by crreating new object we allow to read partfiular file
+
+E:\\51 \_Shagun\\Java This Side\\In Class Room\\!Eclipse Directories\\Day 41\_11th MAY\\src\\types\\exception\\sales\_data.txt
+
+
+
+2\. Unchecked Exception - at runtime compiler doen;t know about the exception(it won't force us to handle). Tehse are undirect/direct child of runtime exception.
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

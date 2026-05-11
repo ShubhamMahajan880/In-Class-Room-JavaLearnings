@@ -15,15 +15,15 @@ public class ActualHierarchyUnderstanding {
 
 		}
 		catch (NullPointerException e1) {
-			// TODO: handle exception
+			System.out.println("ActualHierarchyUnderstanding.performingOperations() - NullPointerException");
 		}
 
 		catch (ArrayIndexOutOfBoundsException e2) {
-			// TODO: handle exception
+			System.out.println("ActualHierarchyUnderstanding.performingOperations() - ArrayIndexOutOfBoundsException");
 		}
 
 		catch (ArithmeticException e) {
-			// TODO: handle exception
+			System.out.println("ActualHierarchyUnderstanding.performingOperations() - ArithmeticException");
 		}
 
 		catch (Exception e) { // Exception is universally parent of all other exceptions, so on taking it at first it'll include all other exceptions inside this
