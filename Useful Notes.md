@@ -168,11 +168,11 @@ Day 5 :
 
 \- JDK, JRE, JVM
 
-JDK - Dev Tool + Compiler - responsible for development of program
+JDK - **Dev Tool + Compiler** - responsible for development of program
 
-JRE - Runtime Environment. All the features, functions responsible for pre built environment. like - System, String and all libraries and files
+JRE - **Runtime Environment**. All the features, functions responsible for pre built environment. like - System, String and all libraries and files
 
-JVM - A virtum machine created while running/execution of program .
+JVM - A **virtum machine** created **while running**/execution of program .
 
 
 
@@ -191,6 +191,8 @@ JVM - A virtum machine created while running/execution of program .
 
 
 Day 6
+
+
 
 * static won;t work for args\[0]
 
@@ -250,7 +252,7 @@ public static void main(String args\[])
 
 \- If there is a single line assignment(like defining the variable) then taht is the part of assignment only. Logical part will always within the main method or class
 
-\- Remebr logic will always written withing the main method - its either assigning the value or updating the value, its always logical and must be within
+\- Remebr **logic will always written withing the main method** - its either assigning the value or updating the value, its always logical and must be within
 
 Datatypes -
 
@@ -858,7 +860,7 @@ Day 13\_30th March
 
 
 
-* Kabhi bhi mehtod ka object nhi bnata hamesha class ka =object bnta he... and vo class ka object methods ko access krta he
+* Kabhi bhi mehtod ka object nhi bnata **hamesha class ka object bnta he.**.. and vo class ka object methods ko access krta he
 * Jis method ko accee krna chahte h, to vo method jis class me h uss class ka object bnta he.
 
 In Eclipse -
@@ -1041,6 +1043,12 @@ Day 20\_09th April
 
 
 
+
+
+**Strings in Java  -**
+
+
+
 * String  - A bunch of character is called as String in Java. String is a class in java which will allow us to create String Object.
 
 
@@ -1102,9 +1110,9 @@ Day 21\_10th April
 
 
 
-* Concat waali str4ing hmesha heap me jaati h because it created as an Object.
+* **Concated str4ing** hmesha **heap** me jaati h because it **created as an Object.**
 * If i am addig 2 strings by creating a 3rd string then that 3rdstring wwill be the in HEAP.
-* But when i am adding any 2 strings withing the ""+"" by creating a 3rd new string then this will be store in SCP.
+* But when i am adding any **2 strings** withing the **""+""** by creating a 3rd new string then this will be store in **SCP**.
 
 
 
@@ -1142,10 +1150,10 @@ Day 22\_13nth April
 
 
 
-* When we create an string like String s1 = new  String("name") - then it created in HEAP as well as in SCP also ... but in somecases String only created in SCP like String s2 = "FatherName", and when we add two strings like String s3 = s1 + s2; then then goes into HEAP, now we want to make a copy of this only HEAP string into SCP - then we use the Intern Method()
-* when we adding 2 strings like String s1 = "Microsoft" + " Bangalore"; then it's in SCP not an issue but when add like String s3 = s1 + s2; then then goes into HEAP and foe using this HEAP also in SCP we used intern() method.
-* intern method is uses for creating a copy of HEAP object into SCP.
-* by using final keyword the respective class can't be parent class if any class.
+* When we create an string like String s1 = **new**  String("name") - then it **created in HEAP as well as in SCP also** ... but in somecases String only created in SCP like String s2 = "FatherName", and when we add two strings like String s3 = s1 + s2; then then goes into HEAP, now we want to **make a copy of this** only HEAP string into SCP - then we use the **Intern Method()**
+* when we adding 2 strings like String s1 = **"Microsoft"** + **"** Bangalore\*\*"\*\*; then it's **in SCP** not an issue but when add like String **s3 = s1 + s2**; then then goes into **HEAP** and foe using this HEAP also in SCP we used intern() method.
+* **intern method is uses for creating a copy of HEAP object into SCP.**
+* by using final keyword the respective class **can't be parent class** if any class.
 
 &#x09;	/\*
 
@@ -1165,16 +1173,200 @@ Day 22\_13nth April
 
 &#x09;	 \*/
 
-* For modifying string on using concat it'll create a new object in the memory and then perform modification, its not feasible for 100's of objects, so for memory and space management we uses concepts of StringBuffer \& StringBuilder which uses append method and do modification at the place in the string.
+* For modifying string on using **concat** it'll **create a new object in the memory** and then perform modification, its not feasible for 100's of objects, so for **memory and space management** we uses concepts of **StringBuffer \& StringBuilder** which uses append method and do modification at the place in the string.
 * concatinaitn of 2 strings always work by assigning in the same object.
 
 s1.concat("is a skill"); // not working
 
-s1 = s1.concat("is a skill"); // Working
+**s1 = s1.concat("is a skill"); // Working**
 
 
 
 * For avoiding this much procrsses of assigning by crating object internally in the meory and then modifying takes lots of space ad memory .. so by using append methos in StringBufffer \& StringBuilder.
+
+
+
+\----------------------
+
+
+
+
+
+**Single code to revise all String concepts -**
+
+
+
+package com.Revision.D21;
+
+
+
+
+
+public class StringRevision {
+
+&#x09;public static void main(String\[] args) {
+
+&#x09;	String s1 = "Visa";
+
+&#x09;	String s2 = "visa";
+
+
+
+&#x09;	System.out.println(s1 == s2);// false - compares address of objects
+
+&#x09;	System.out.println(s1.equals(s2)); // false - compares values
+
+
+
+&#x09;	String s3 = "Visa";
+
+&#x09;	System.out.println(s1 == s3);//true  - obj already in scp,so same addresses
+
+&#x09;	System.out.println(s1.equals(s3)); // true - both havin same values.
+
+
+
+
+
+&#x09;	String s4 = new String("Visa");
+
+&#x09;	System.out.println(s1 == s4);//false  - in created in HEAP, but having a copy in SCP with different adddress
+
+&#x09;	System.out.println(s1.equals(s4));// true  - content is same.
+
+
+
+&#x09;	String s5 = new String("Visa");
+
+&#x09;	System.out.println(s4 == s5); // false - jb jb heap me nya object aayega ya new keyboard use kr k ibject bnega  . Hmesha differebt address pr bnega as a new object.. Heap never repeats
+
+&#x09;	System.out.println(s4.equals(s5));// true - content is still same here
+
+
+
+&#x09;	System.out.println("------------->");
+
+
+
+&#x09;	s1.concat("Bangalore");
+
+&#x09;	System.out.println(s1);// can;t do this concatenation as strings are immutable.
+
+
+
+&#x09;	String s6 = s1.concat("Bangalore");
+
+&#x09;	System.out.println(s1);
+
+&#x09;	System.out.println(s6);
+
+
+
+&#x09;	String s7 = "VisaBangalore";
+
+&#x09;	System.out.println(s7+"S7 waala");
+
+&#x09;	System.out.println(s6+"s6 wala");
+
+&#x09;	System.out.println(s6 == s7);// false -
+
+&#x09;	System.out.println(s6.equals(s7));//true - same content
+
+
+
+&#x09;	System.out.println("-------------->");
+
+
+
+&#x09;	String s8 = "technology";
+
+&#x09;	String s9 = "pursuing";
+
+&#x09;	String s10 = s8+s9;
+
+&#x09;	System.out.println(s8);
+
+&#x09;	System.out.println(s9);
+
+&#x09;	System.out.println(s10);
+
+
+
+&#x09;	String s11 = "technologypursuing";
+
+&#x09;	System.out.println(s11);
+
+&#x09;	System.out.println(s10 == s11); // false - becuase string created by adding 2 string creates new object which is in heap and s11 is scp, so not equality
+
+&#x09;	System.out.println(s10.equals(s11)); //content is same
+
+
+
+&#x09;	String s12 = "technology" + "pursuing";
+
+&#x09;	System.out.println(s12);
+
+&#x09;	System.out.println(s11 == s12);//true - only one ibject crated becfuase of compile time and its a literal and in scp.
+
+&#x09;	System.out.println(s11.equals(s12));//true - same content
+
+
+
+
+
+&#x09;	System.out.println(s10 == s12);//false - becuae s10 is created by string addition and its a new object whch is in heap whole s12 is literal and in SCP
+
+&#x09;	System.out.println(s10.equals(s12));//true - same content.
+
+
+
+&#x09;	System.out.println("------------------->");
+
+
+
+&#x09;	String s13 = "Walmart";
+
+&#x09;	String s14 = "Pune";
+
+
+
+&#x09;	String s15 = s13 + s14;
+
+&#x09;	System.out.println(s13);
+
+&#x09;	System.out.println(s14);
+
+&#x09;	System.out.println(s15);
+
+
+
+&#x09;	String s16 = "WalmartPune";
+
+&#x09;	System.out.println(s15 == s16);//false - because s15 is as a object and inside heap.
+
+&#x09;	System.out.println(s15.equals(s16));//true
+
+
+
+&#x09;	String s17 = s15.intern();
+
+&#x09;	System.out.println(s17 == s15);//false
+
+&#x09;	System.out.println(s17.equals(s15));//true.
+
+
+
+&#x09;	System.out.println(s17 == s16);//true - s17 giving the memory reference of s15 in scp ...
+
+&#x09;	System.out.println(s17.equals(s16));//true
+
+&#x09;}
+
+
+
+
+
+}
 
 
 
@@ -1222,7 +1414,7 @@ Day 24\_15nth April
 
 
 
-Inheritance -
+**Inheritance -**
 
 
 
@@ -1240,7 +1432,7 @@ Inheritance -
 
 
 
-* Types of Inheritances are - 1 - Single Inheritance, 2 - Multilevel Inheritance, 3 - Hierarchical Inheritance and NO MULTIPLE INHERITANCE in JAVA.
+* Types of Inheritances are - 1 - Single Inheritance, 2 - Multilevel Inheritance, 3 - Hierarchical Inheritance and **NO MULTIPLE INHERITANCE in JAVA**.
 
 
 
@@ -1259,12 +1451,16 @@ Inheritance -
 * Using Inheritance we no need to write the functionalities form scratch we cn drorectly use them if gthey are available in the parent or the object class.
 * Method Overriding - When child class want to use his own funcitnality instead of given parent class functionality then can be done by adding some extra informationnor operations by his own and this concept is called as Method Overriding.
 * Let say - Parents said Hii , but child wants to say Hello. Then in Parent Class having statement Hii, Child class crated his own statement Hello within the **same method**.
-* why overriding - when child dont want to use the given functionality of parent class... child want to add some more features or change something within the same class.
+* why overriding - when **child dont want to use** the given functionality of parent class... child want to **add some more features** or change something within the same class.
 * it's called \& represents as  -
 
-child class IS-A parent classs
+
+
+**child class IS-A parent classs**
 
 Manager IS-A EMployee - which menas here the manager class is child class and having parent class Employee.
+
+
 
 * Method Overriding is not possible without Inheritance.
 
@@ -1340,7 +1536,7 @@ Why Multiple Inheritance don;t exists in java -
 * It's for avoiding Ambiguity. If there will be both Parent classes then child class would confuse which method have to access.
 * when ww override the methid then the child clas inharrited parent functionality andif botht he parent classes having the smae method name then child class badly consufes to whom to access. - and that's why java doens not allow multiple inheritance.
 * On observing its structure it looks like DIAMOND and this scenario is called - **DEATH OF DIAMOND** or **DIAMOND PROBLEM** in java.
-* so this multiple inheritance functionality doesn't work in java using classes, but using Interfaces we'll able to develop this.
+* so this multiple inheritance functionality doesn't work in java using classes, but **using Interfaces** we'll able to develop this.
 
 
 
@@ -1352,7 +1548,7 @@ Method Overloadingg -
 
 
 
-* In Method Overriding its only possible when there is Inheritance, while method Overloading can happen within the class only.
+* In **Method Overriding** its **only possible when** there is **Inheritance**, while **method Overloading** can happen **within the class only.**
 * In method Overloading - Multiple versions of the Method cna be present in the same class.
 
 
@@ -1369,9 +1565,9 @@ Rules of Method Overloading -
 
 1 - Same Method name;
 
-2 - Different Args, Diff Order of Srgs, Differ Number of Args.
+2 - **Different** Args, **Diff Order** of Srgs, **Differ Number** of Args.
 
-3 - There is not such riles like Overriding ... ant Access Modifier can be used freely, any return can be used easily in Method Overloading Concept.
+3 - There is **not such rules** like Overriding ... ant Access Modifier can be used freely, any return can be used easily in Method Overloading Concept.
 
 
 
@@ -1421,7 +1617,7 @@ class GSTInvoice extends InvoiceManagement // child class extended from parent c
 
 
 
-InvoiceManagement invoiceManagement = new GSTInvoice() // this is called as - "auto up casting" OR
+InvoiceManagement invoiceManagement = new GSTInvoice() // this is called as - **"auto up casting"** OR
 
 InvoiceManagement invoiceManagement = (InvoiceManagement)new GSTInvoice();  // manually doing upskilling  - not required
 
@@ -1535,7 +1731,7 @@ Abstraction -
 
 
 * Explose something which is require, not anything unnecessary or unessentials
-* Abstraction in Java  is Hiding Implementations - SHowing only required and essential information to user rest all backend part is hidden within the functionalities inside classes.
+* Abstraction in Java  is **Hiding Implementations** - SHowing only required and essential information to user rest all backend part is **hidden** within the **functionalities inside classes**.
 * The main difference between Encapsulation \& Abstraction is; - Encapsulation is responsible for hiding particular data/method, while Abstraction is responsible for hidoing the entire implemetantions. It only shows whatever is rewuired and usefuyl to the users, means other classses will not be able to see your code.
 
 
@@ -1652,7 +1848,7 @@ We are discussing for Interface **before Java 8** -
 
 
 
-* Usually in industry while declaring interface, in Interface name uses INameOfTheInterface (IBanking)	.
+* Usually in industry while declaring interface, in Interface name uses **INameOfTheInterface** (IBanking)	.
 * In Inetrface there is **only What** Part.., **No How Part** exists. // Just method declaration, not the initialization of it.
 * After declaring Interface, we can directly write the method name \& Interface , **By default** **all** the **methods** are **always Public \& Abstract** in Interface.
 * Why Interface - to **force** to all rest classes, to avoid the conflicts related like - Method name and all, one clear set of rule which is applicable everywhere.
@@ -1847,11 +2043,11 @@ Can we Solve Multiple Inheritance problem by Inheritance -
 
 
 * Yes, because in Interface(In java 7 or before Java 8), there is no method body only method declaration(What part)(abstract method), so child class won't confuse and call the same method from any of the parent.
-* Implementing Multiple Inheritance using Interfaces - right now using Interface, able to performing multiple Inheritance untill methods are only abstract(Only What) and not initalized(How)");
+* Implementing Multiple Inheritance using Interfaces - right now using Interface, able to performing multiple Inheritance untill methods are **only abstract(Only What) and not initalized(How)")**;
 
 
 
-* But this kind of implementation of Multiple Inheritance was only valid befor java 8 version, becuase from java 8 - we used to create Default Methods also, so here the method's body exists(How Part/method initialization). So for it while overriding the same method from the main class/child class then can use .super method and clearify which parent's method want to implement.
+* But this kind of implementation of Multiple Inheritance was only **valid befor java 8** version, becuase from java 8 - we used to create Default Methods also, so here the method's body exists(How Part/method initialization). So for it while overriding the same method from the main class/child class then can use .super method and clearify which parent's method want to implement.
 
 
 
@@ -1859,17 +2055,17 @@ Syntax - NAMEOFINTERFACE.super.NAMEOFMETHOD
 
 
 
-@Override
+@**Override**
 
-public void methodName()
+**public void methodName()**
 
-{
+**{**
 
-&#x20; PARENT1.super.methodName();
+&#x20; **PARENT1.super.methodName();**
 
-&#x20; PARENT2.super.methodName();
+&#x20; **PARENT2.super.methodName();**
 
-}
+**}**
 
 
 
@@ -1881,15 +2077,17 @@ Types of Interface - There 4 types of Interfaces -
 
 1 - Normal Interface --> Used so far, **simple Inheritance** and all similar stuff
 
-2 - Marker Interface --> Empty Interface - Interface w/o any method .
+2 - Marker Interface --> **Empty Interface** - Interface w/o any method .
 
-3 - Functional Interface --> Only one abstract method.
+3 - Functional Interface --> **Only one abstract method**.
 
 4 - Nested Interface - Not much used in Industry
 
 
 
-2\) - Marker Interface - It's called Marker because its marking something in itself.
+
+
+2\) - Marker Interface - It's called Marker because its **marking something in itself.**
 
 
 
@@ -1957,7 +2155,7 @@ Day 38\_06th MAY
 
 
 
-* In Funcitnal Interface as there is compulsory for one abstract method only. This could be directly in the interface or could be extended. like parent interface or child interface.. on using @FunctionalInterface annotation there can be only one abstract method.
+* In Funcitnal Interface as there is compulsory for **one abstract method only**. This **could be directly in the interface or could be extended**. like parent interface or child interface.. on using @FunctionalInterface annotation there can be only one abstract method.
 * Functional Prg4amming - in which we  are interested for what we are doing , How part not interested. Functional Programming - Functional way of writing code.
 * Wheneve using interface then ina  afile there cna be only one public - either class or interface. Both together can;t be.
 
@@ -1968,7 +2166,7 @@ Day 38\_06th MAY
 
 
 * Lambda Expression iaa functional progeamming of writing code in 1-2 lines.
-* Lambda Expression is only possivle whwehn threre is functional interface
+* Lambda Expression is **only possivle whwehn threre is functional interface**
 
 
 
@@ -2020,7 +2218,7 @@ Day 39\_07th MAY
 
 
 
-Exception Handling  -
+**Exception Handling  -**
 
 
 
@@ -2030,8 +2228,10 @@ Exception - is an abnormal situation in the program.
 
 * Happy Scenario  -> +ve Debugging, successfully debug entire program with all positive and correct cases.
 * NullPointerException - is an exception responsible for exception aresisng because of pointer pointing to the variable which is NULL.
-* Along with these exceptions program got terminated abnormally.
+* Along with these exceptions program got terminated abnormally.0
 * Some of the errors/exceptions appear in some cases -
+
+
 
 Excpetion - 1) (NullPointerException)- variable is null and pointer/compiler pointing to it.
 
@@ -2043,8 +2243,8 @@ Exception - 4) - ArithmatiicExpressionError - when deviding by zero or somevalue
 
 
 
-* Using Try - that part of code which can give eror or risky part, put inside try block.
-* Using catch - responsible for catching the error part by respective handle and creating object.
+* Using Try - that part of code which can **give error or risky part**, put inside try block.
+* Using catch - responsible for catching the error part by **respective handle** and creating object.
 
 
 
@@ -2094,8 +2294,8 @@ Program Ended Successfully
 
 
 
-* using try catch,  we are stopping the abnormal closing of program and implementing successful termination of program by mentioning exceptions too.
-* printStackTrace() - is responsible for showing the error message part(Trace), without using it the output for the above code will (withput Trace)like -
+* using try catch,  we are **stopping the abnormal closing** of program and implementing successful termination of program by mentioning exceptions too.
+* printStackTrace() - is responsible for **showing the error message part(Trace),** without using it the output for the above code will (withput Trace)like -
 
 
 
@@ -2113,7 +2313,8 @@ Program Ended Successfully
 
 
 
-* In try block we are already writitng the possible risk code, so accorndinglt the catch part will work. Jo error possibly aayega usi ka catch likheneg.. not any random or something, otherwise it won't catch to try.
+* In try block we are already writitng the possible risk code, so accordingly the catch part will work. Jo error possibly aayega usi ka catch likheneg.. not any random or something, otherwise it won't catch to try.
+* On using catch (Exception e) - we cna print the exception for any of the exception ebcuase Exception is PARENT and UNIVERSAL EXCEPTION for all .. but its good to print the respecrtive exceptin for better readabilitya nd clarity of code.
 
 
 
@@ -2135,10 +2336,17 @@ Interview Qun - Difference between **Error \& Exception.**
 
 
 
-* Exception - is try and cache part which can be handle, while **error cannot** be **handle**.
+* Exception - is try and cache part which **can be handle**, while **error cannot** be **handle**.
 * Now this class is directly using propreties/methods of another class - but this class don't know na ki in that classs there is exceptions(possible risk) ecists. ths clas dontnhave ahy signal what's happend in previous or accessing class.
-* Exception class is responsibly parent class for all the other possible exceptions. null pointer, arithmetic exception and all exceptions are child of Exception class. which will give the error
-* Exception is universally parent of all other exceptions, so on taking it at first it'll include all other exceptions inside this, which will give the error, so its necessary to use first child exception, parent exception and then gran parent exception.
+* **Exception class is responsibly parent class** for all the other possible exceptions. null pointer, arithmetic exception and **all exceptions are child of Exception class**. which will give the error
+* Exception is universally parent of all other exceptions, so on taking it at first it'll include all other exceptions inside this, which will give the error, so its necessary to **use first child exception, parent exception and then gran parent exception.**
+* **Jis line pe pehla exception aata hai,**
+
+&#x20;  **uske baad ka code execute hi nahi hota**
+
+* **Inside try block,**
+
+&#x20;  **first exception stops remaining code execution**
 
 
 
@@ -2150,15 +2358,21 @@ Day 41\_11th MAY
 
 
 
-All the exceptions thrown at runtime. Exceptions are always provide on runtime only/while running program.
+All the exceptions **thrown at runtime**. Exceptions are always provide on runtime only/while running program.
 
 
 
-Types of Exception - 
+Types of Exception -
 
 
 
-1. Checked Exception - Exception throws at runtime, but compiler known about the exception(and force us to handle). These are the direct child of Runtime Exception.
+1. Checked Exception - Exception throws at runtime, but compiler known about the ex ception(and force us to handle). These are the direct child of Runtime Exception.
+
+2\. Unchecked Exception - at runtime compiler doen;t know about the exception(it won't force us to handle). Tehse are undirect/direct child of runtime exception.
+
+
+
+**Checked Exception -**
 
 
 
@@ -2168,11 +2382,11 @@ Class.forName("NAMEOFTHEPACKAGE.NAMEOFTHECLASS"); - is responsible for loading t
 
 * by using this Class.forName(checked excpetion) - compiler knowns about this exception
 * so on using these checked exceptions - compiler is aware of exception and not allowing for such erorrors/exceptions and handle it or allow it using try cache accordingly.
-* Some Checked Exception are - 
+* Some Checked Exception are -
 
 FileNotFoundException - responsible when firle didn't find/load inside program
 
-IoOException - 
+IoOException -
 
 
 
@@ -2182,7 +2396,246 @@ E:\\51 \_Shagun\\Java This Side\\In Class Room\\!Eclipse Directories\\Day 41\_11
 
 
 
-2\. Unchecked Exception - at runtime compiler doen;t know about the exception(it won't force us to handle). Tehse are undirect/direct child of runtime exception.
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 42\_12th MAY
+
+
+
+* Exception is parent class of all built in exception .. Let's understand NumberFormatException having parent IllegalArgumentException, similarly IllegalArgumentException having parent RunTimeException and then RunTimeException having parent Exception. So **Exception is universally parent of all exceptions.**
+
+
+
+* Jaha exception aa skta h vaha aaayega.. and then for handling it'll jump to line which having handling part 0f that extension, means whatever **between** this (risky code line)error occuring and handling(exception) - **won't execute**. try me risky code se seedah handling pr jum krega to after that risky code line if we wanted to **terminate connection or something important,** won't work - so for avoiding this issue - java Inntroduced **finally block.**
+* this finally block will **executed always** - either be exception in the program or not.. it will **deliver** the final message/outcome.
+* so its executed alwasys and close the progream - dont waste the resouces -  memory, RAM, storage, CPU.  don;t  waste water example
+
+
+
+
+
+&#x09;in the exception scenario - Try Start........
+
+&#x09;/\*
+
+&#x09; \* java.lang.ArrayIndexOutOfBoundsException: 0 at
+
+&#x09; \* handling.exceptions.FinallyKeywordUnderstanding.main(
+
+&#x09; \* FinallyKeywordUnderstanding.java:21) Name is not provided Driver Finally
+
+&#x09; \* Block which will execute always
+
+&#x09; \*/
+
+
+
+&#x09;
+
+&#x09; without expeciton - on passing arguement successfully Try Start........
+
+&#x09;/\*
+
+&#x09; \* Driver.main() -- Try End....... Driver Finally Block which will execute
+
+&#x09; \* always
+
+&#x09; \*/
+
+
+
+
+
+* finally block important and responsible in exceptin handling program to close it properly, like - database closure, file closure. For resource and memory saver
+* finally block can only be stopped using - System.exit(0); // KIll JVM .
+
+
+
+&#x09;
+
+&#x09;when System.exit(0); is activated, it kills the jvm after this
+
+&#x09;/\*
+
+&#x09; \* .FinallyKeywordUnderstanding and only above written prigram excetued not
+
+&#x09; \* afetr this o/p - Try Start........ Driver.main() -- Try End.......
+
+&#x09; \*/
+
+&#x09;
+
+
+
+
+
+* In real world its not advisable to use System.exit(0); command because it KIll and teriminate JVM .
+
+
+
+
+
+**Custom Exception**
+
+* There is thoussand+ exception in java which are already available... predefined or built-in the libraries. But what of there we want a custom exception wheather we can determine what exception or thread may oddcur over here.
+* So, as per the requirement - USER DEFINED EXCEPTIONS can be created
+* For creating custom Exception - we create the class with name of rewuireed exception then extends it with parent exception(either by exception or  by runtime exception), then create constructor of that classs with string arguememnts(String - for message passing) along with using super() class of that constructor.
+* make sure whenever fcreating custom exception then their **naming must be ended with EXCEPTION**, so that can be recognize particuallly created userdefined excepiotn.
+* our **created exceptions** will be always **subclass of EXCEPTION OR RUNTIMEEXCEPTION**. so will be extenede by them .
+
+
+
+During creating these cdustomixed exception -
+
+
+
+* **throw** is keyword responsible for creating **new exception**. with object.
+* while **throws** is responsible for throwing that **created exception or multiple exceptions**. with the method, this method cna throw this exception.
+
+
+
+**throw** - throw new EmailAlreadyExistsException(" Email id - "+email+" already registered" );
+
+**throws** - public boolean regsiterUser(String \_email) throws EmailAlreadyExistsException, IOException, Exception
+
+
+
+* if we throws built in exception with method and for customly created exceptions it gives error because it should throws with customly created.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 43\_13nth MAY
+
+
+
+* Till here java suggested finally  block which will mandatory execute either exception occur or not. Its always mandatory exceting block. Only will not execute when we shut down the jvm by using - System.exit(0) command(program out of memory error OR JVM crash). But people also perfomed misuse of facilites.. sometimes finally block initialized sometime not. to avoiding this carelessnes or conflict
+* Java introduced **try with resources** from **java 7 or 1.7** version. -> If we are not writing finally block then java will automatically close the connections. finally block internally executed with try() - with resources block. \[closing the connection is  priority(.clsoe()) because not closing is wasting of resources, memory, ram, storage and all ]
+* try()
+
+{
+
+
+
+} using paranthesis in try is the way to  initialize try with resources.
+
+
+
+
+
+* try (BufferedReader bR = new BufferedReader(new FileReader(""));)  // this is try block with resources - started from java 7 or 1.7
+
+&#x20;  {
+
+
+
+&#x20;  }
+
+
+
+
+
+* 
+
+public static void main(String\[] args)
+
+{
+
+&#x09;System.out.println("TryingTryWithResoucesandAutoClosableInterface.main()");
+
+
+
+&#x09;try (BufferedReader bR = new BufferedReader(new FileReader("E:\\\\51 \_Shagun\\\\Java This Side\\\\In Class Room\\\\!Eclipse Directories\\\\Day 43\_13nth MAY\\\\bin\\\\ttry\\\\withresources\\\\sales\_data.txt"));)
+
+&#x20;{
+
+&#x09;String line;
+
+&#x09;while ((line = bR.readLine()) != null)
+
+&#x09;{
+
+&#x09;System.out.println(line);
+
+&#x09;}
+
+&#x20;}
+
+&#x09;catch (Exception e)
+
+&#x09;{
+
+&#x09;e.printStackTrace();
+
+&#x09;}
+
+&#x09;}
+
+} - in this qun we are not closing to bR.. its beoing closing by finally block internally.
+
+
+
+Behind the scene, Its like -
+
+
+
+finally
+
+{
+
+&#x20;bR.close()
+
+}
+
+
+
+happening internnaly when using try with resources - try().
+
+
+
+
+
+* In database conencitons or filemenenagements  we yses try with resources. where the close method done internally .. we don;t do that. It's auto-close
+* classes which uses try with resoourcers are  **Auto Closable classes.**
+* If the class is Auto-Closable then cnan be used with try with resources - try().
+* Inside try with resources - try() btackets, we only mentjon those classes which are Auto-Closable, if want to  use any user defiend class inside try with resoucres  - try() brackets then we need to make that class Auto Closable using implements AutoCloseable.
+
+
+
+public class driver implements AutoCloseable - allows to use inside try with resoucres  - try() brackets
+
+
+
+try( Driver d = new Driver())
+
+{
+
+
+
+}
+
+
+
+
+
+
+
+**Multi catch block inn java -**
+
+
+
+* isntead of writing multiple catch blocks - java introdices Multi-catch block. so that all the catch blocks can be created in one time.
+* using pipe(|), we can write multiple exceptions at a time. whichever will be written first will be executed first and rmwaining 2 will be ingonred.
+* There should not be any relaitonship among the exceptions - otherwise child first rule not followed.  All these excceptins are independent of each other.
+
+
 
 \-------------------------------------------------------------------------------------------------------------------------------
 
@@ -2190,11 +2643,41 @@ E:\\51 \_Shagun\\Java This Side\\In Class Room\\!Eclipse Directories\\Day 41\_11
 
 
 
+Day 44\_14nth MAY
+
+
+
+**Collection Frameworks in Java -** 
+
+
+
+ArrayList - is responsible for ordered and repeating. It allows duplicate objects to appear as well as in the correct order.
+
+&#x09;	Array is always index based.
+
+&#x09;	Doing some operations - find the names start with 'A'
+
+&#x09;	OR get lower case
+
+&#x09;	OR get Upper case
 
 
 
 
 
+
+
+
+
+
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 44\_15nth MAY
 
 
 

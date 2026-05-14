@@ -32,11 +32,12 @@ class ElectricCars {
 			String _myPersonalOpinion) {
 		this.carName = _carName;
 		this.carBrand = _carBrand;
-		this.carRating = _carRating;
+		this.carRating = _carRating;//here we are pasing all parameters inside the consteuctor which will help in taking the values as in object form
 		this.carModel = _carModel;
 		this.carPriceinLakhs = _carPriceinLakhs;
 		this.myOpinion = _myPersonalOpinion;
 	}
+
 }
 
 public class ConstructorOverloadingRevision {
@@ -51,7 +52,7 @@ public class ConstructorOverloadingRevision {
 
 		System.out.println("Creating Objects of the classs - ");
 
-		ElectricCars eC2 = new ElectricCars("Nexon", "TATA", 5.5f, "tataNexonEV");
+		ElectricCars eC2 = new ElectricCars("Nexon", "TATA", 5.5f, "tataNexonEV");// here we are pasing all parameters inside the consteuctor which will help in taking the values as in object form
 		System.out.println("Infor for eC2 are  - ");
 		System.out.println("Name of the car is - " + eC2.carName);
 		System.out.println("Brand of the car is - " + eC2.carBrand);

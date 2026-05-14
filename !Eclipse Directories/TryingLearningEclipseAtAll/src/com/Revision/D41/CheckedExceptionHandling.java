@@ -13,7 +13,7 @@ public class CheckedExceptionHandling {
 		 */
 
 		try {
-			Class.forName(myInfo5665);
+			Class.forName("myInfo5665");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
