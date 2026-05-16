@@ -106,6 +106,18 @@ D40) Exceptional Handling - types, Parent exception classes and child exception 
 
 
 
+**Types in Exception Handling , Custom EH, Multi Catch, Intro to Collection Framework, Array List understanding** 
+
+D41) Types of Exception - Checked and Unchecked
+
+D42) Finally Block in Exceptions \& Custom Exception Handling
+
+D43) Try with resources, Multi Catch block in Java 
+
+D44) Collection Framework in java.
+
+D45) Types of Collection and Intro to Array List.
+
 
 
 
@@ -149,6 +161,4 @@ Why abstract class \& Interface ka object nhi bna skte ?
 
 
 as you uses .uppercase, .lowercase, .append, .concatenate, .readLine - so what we cna use and which exist ??
-
-
 

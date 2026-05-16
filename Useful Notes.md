@@ -2647,9 +2647,11 @@ Day 44\_14nth MAY
 
 
 
-**Collection Frameworks in Java -** 
+**Collection Frameworks in Java -**
 
 
+
+Collection - is responsible for putting all similar kind of objects together at a place. (Container)
 
 ArrayList - is responsible for ordered and repeating. It allows duplicate objects to appear as well as in the correct order.
 
@@ -2663,13 +2665,17 @@ ArrayList - is responsible for ordered and repeating. It allows duplicate object
 
 
 
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 45\_15nth MAY
 
 
 
 
 
-
-
+Array List - Theory, address updations on Insertion and Deletion
 
 
 
@@ -2677,11 +2683,7 @@ ArrayList - is responsible for ordered and repeating. It allows duplicate object
 
 
 
-Day 44\_15nth MAY
-
-
-
-
+Day 46\_18nth MAY
 
 
 
