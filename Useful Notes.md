@@ -2705,7 +2705,7 @@ Linked List -
 
 
 
-Diff. between ArrayList \& LinkedList - as both are smae functionalities -> Ordered and Repetition. But good and bad because of complexities and as per uses.
+Diff. between ArrayList \& LinkedList - as both are smae functionalities -> Ordered and Repetition(Duplicate). But good and bad because of complexities and as per uses.
 
 
 
