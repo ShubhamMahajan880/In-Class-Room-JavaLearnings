@@ -2960,7 +2960,7 @@ Day 50\_05th June
 
 
 
-Iterating in Set - 
+Iterating in Set -
 
 
 
@@ -2973,13 +2973,13 @@ Iterating in Set -
 
 
 
-LinkedHashSet - 
+LinkedHashSet -
 
 
 
 * When you want to unique as well as in order. Then use LinkedHashSet - LinkedList + HashSet
 
-&#x20;                                                                       (For Ordering)+(For Uniqueness)								
+&#x20;                                                                       (For Ordering)+(For Uniqueness)
 
 * The only difference between HashSet \& LinkedHashSet is of Order, in LinkedHashSet we get in order with Uniqueness rest Everything is same as HashSet - same Load Factor, Same Workking, Same Capacity everything.
 * LinkedHashSet also allows only one null. On adding more nulls it will be only adding not printing.
@@ -2990,7 +2990,7 @@ LinkedHashSet -
 
 
 
-TreeSet - 
+TreeSet -
 
 
 
@@ -3000,11 +3000,11 @@ TreeSet -
 
 
 
-Equal \& compare are two different, 
+Equal \& compare are two different,
 
 
 
-Equals -> directly checks both are equal or not. 
+Equals -> directly checks both are equal or not.
 
 compare -> checks which one is smaller and which one is larger. like - Banana vs Cat -> its comparable because in terms of Unicode b is smaller and c is larger.
 
@@ -3012,7 +3012,7 @@ compare -> checks which one is smaller and which one is larger. like - Banana vs
 
 
 
-So finally, 
+So finally,
 
 
 
@@ -3024,7 +3024,7 @@ TreeSet -> **doesn't allows NULL** at all. Not a single NULL. means TreeMap also
 
 
 
-* By creating class and using its object in the TreeSet isn't work.
+* By creating class and using its object in the TreeSet isn't work. becuase crearted class doen't have compare/compare to method.
 
 
 
