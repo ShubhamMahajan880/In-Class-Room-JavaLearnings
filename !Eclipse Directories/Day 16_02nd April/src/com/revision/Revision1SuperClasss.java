@@ -1,13 +1,11 @@
 package com.revision;
 
-
 class LibraryManagement {
 
 	public LibraryManagement(String name) {
 		this(1200);
 		System.out.println("Book 2");
 	}
-
 	public LibraryManagement(int num) {
 		super();
 		System.out.println("Book 1");
@@ -20,7 +18,6 @@ class Library extends LibraryManagement {
 		this(4500);
 		System.out.println("Book 4");
 	}
-
 	public Library(int num) {
 		super("Shubham");
 		System.out.println("Book 3");
@@ -36,7 +33,6 @@ public class Revision1SuperClasss {
 
 		Library lB = new Library();
 		System.out.println("Book5 is here");
-
 	}
 
 }

@@ -30,12 +30,11 @@ class ArrayCreation {
 
 	}
 }
-
 public class ArrayUnderstanding {
 	public static void main(String[] args) {
 		System.out.println("Learnign about strings in this sesison =");
 		System.out.println("--------------->");
 		ArrayCreation aC = new ArrayCreation();
-		aC.learnString();	
+		aC.learnString();
 	}
 }

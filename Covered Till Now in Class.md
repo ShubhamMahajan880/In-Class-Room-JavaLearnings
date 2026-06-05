@@ -42,7 +42,7 @@ D16) Constructor Overloading and super(), this() class concepts
 
 D17) using this class performing constructor's work and overloading  concept
 
-D18) Array and String in Java.
+D18) String Array in Java.
 
 D19) IIB - Instance Init Block, SIB - Static Init Block
 
@@ -106,17 +106,75 @@ D40) Exceptional Handling - types, Parent exception classes and child exception 
 
 
 
-**Types in Exception Handling , Custom EH, Multi Catch, Intro to Collection Framework, Array List understanding** 
+**Types in Exception Handling , Custom EH, Multi Catch, Intro to Collection Framework, Array List understanding**
 
 D41) Types of Exception - Checked and Unchecked
 
 D42) Finally Block in Exceptions \& Custom Exception Handling
 
-D43) Try with resources, Multi Catch block in Java 
+D43) Try with resources, Multi Catch block in Java
 
 D44) Collection Framework in java.
 
 D45) Types of Collection and Intro to Array List.
+
+
+
+**Collection Frameworks - List \& Its Types, Set \& Its Types, Hashing Full Concept.**
+
+D46) Intro to Linked List, Diff. b/w ArrayList \& LinkedList
+
+D47) List Revision, Set Into, Set Types. HashSet Working.
+
+D48) HashSet Working, HashCode and Contracts.
+
+D49) Rehashing, Load Factor \& Hashing all Concepts
+
+D50) Iteration in HashSet, Intro to LinkedHashSet \& TreeSet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

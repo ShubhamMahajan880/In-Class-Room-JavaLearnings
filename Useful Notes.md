@@ -2663,7 +2663,7 @@ ArrayList - is responsible for ordered and repeating. It allows duplicate object
 
 &#x09;	OR get Upper case
 
-
+Collection and Collections both are different - collection is an interface, collections is the utility class.
 
 \-------------------------------------------------------------------------------------------------------------------------------
 
@@ -2679,17 +2679,358 @@ Array List - Theory, address updations on Insertion and Deletion
 
 
 
+Array List - **Index Based**, **Continuous Memory Allocation**, Good for **Random Accessing** because of **O(1)**, Insertion/.Deletion  -> **Not good** as need to **shifts all** elements addresses and having **O(n)**. Cost is more because of shifting right while inserting and shifting left while deletion.
+
+
+
+
+
 \-------------------------------------------------------------------------------------------------------------------------------
 
 
 
-Day 46\_18nth MAY
+Day 46\_01st June
+
+
+
+
+
+Linked List -
+
+
+
+
+
+***interview specific***
+
+
+
+Diff. between ArrayList \& LinkedList - as both are smae functionalities -> Ordered and Repetition. But good and bad because of complexities and as per uses.
+
+
+
+Array List
+
+* **Index Based**
+* Continuous Memory location
+* Grow dynamically
+
+\-> Good for - **Random access** / Read ? -> index based and cont memory > **O(1)**
+
+\-> Not Good fer Adding and deleting elements in the middle of list? Shifting required-> O(n)
+
+
+
+LinkedList
+
+* **Node based**(prev - element - next)
+* Does not use cont memory location
+
+\-> Good For> Random insertionlit just change the linking) -> O(n) -> O(n) to reach the particular element + O(1) to insert an element.
+
+\-> Not Good for .> searching an element as not index based.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 47\_02nd June
+
+
+
+Set -
+
+* Internally Set is also using map.
+
+
+
+\->List Ordered, Duplicate and multiple null
+
+
+
+ArrayList -> Random read / access O(1)
+
+LinkedList -> Random insertion/ deletion > O(n), O\[n)
+
+\-----------
+
+
+
+* Set Interface
+
+
+
+HashSet - **Uniqueness**, **Unordered**, **allow one null**
+
+LinkedHashSet
+
+TreeSet
+
+
+
+
+
+\-> If you **don't want Duplicate** then use **Set**(HashSet, LinkedHashSet, TreeSet), if you **want duplicate** then use **List**.
+
+* HashSet internally uses Hashcode, Hashcode method is within the **object class**.
+
+
+
+* Hashet uses Hashcode - which is a unique number (-ve to +ve).
+* Hashcode having default size (16).
+
+
+
+Hashcode() -> return the hash value of an object
+
+equals() ->
+
+
+
+* Contract b/w equal and hascode ?
+
+
+
+1\. If Two objects are equal then hash code must be same.
+
+2\. If two objects are returning same hashcode, object may or may not be equal. (JVM gives two sma ehashcodes between two different objects, because of some issue or error, happens very rarely) and this is known as - **Hash Collision**.
+
+
+
+when we try to override the hashcode forecefuully, its completelty denied and not consider good.
+
+
+
+* hashcode internally uses at the end **Linked List** data structure.
+* hash doesn't have its own implementations its using map internally.
+* Hashcode method is within the object class.
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Day 48\_03rd June
+
+
+
+
+
+***Interview Specific - Very very Important***
+
+
+
+
+
+\->Set Unorder and no duplicated
+
+
+
+HashSet -> Unorder and no duplicated
+
+O(1) - "Bangalore".hashCode() -> 53245234 \& (N-1) -> 2nd index
+
+&#x09;"Bangalore".hashCode() ->53245234 \& (N-1) -> 2nd index, as the object is same here so, both having the same hashcode.
+
+
+
+"Bangalore".hashCode()-> 53245234 \& (N-1) -> 2nd index
+
+"Chennai".hashCode() -> 53245234 \& (N-1) -> 2nd index, By mistake JVM allowed the same hashcode to the existing object -> **Hash Collision**.
+
+
+
+Equals method "Bangalore".equals("Chennai") -> False
+
+
+
+
+
+\----------
+
+
+
+Contract b/w hashCode and equal -
+
+
+
+Contract 1 - If **two objects** are **equal** then the **hashcode must be same**
+
+Contract 2 - If **two objects return same hash** code, then object **may or may not be equal**
+
+
+
+
+
+&#x20;
+
+&#x20;               Personaaa p1 = new Personaaa("shubh", "mahajan");
+
+&#x09;	Personaaa p2 = new Personaaa("shubh", "mahajan");
+
+
+
+&#x09;	System.out.println(p1.equals(p2)); // false - giving false while .equals compares content which is same, still its giving false,
+
+&#x09;	/\*so it worked in string for here, we need to override equal method.
+
+&#x09;	  - Here object class equal method compares the References
+
+&#x09;	  - By default equal is not comparing the content, need to overrride the custom class - in case of string class it compares directly
+
+&#x09;	  - becuase developer has overriden the equal  methid in string class internally, no need to di it manually.
+
+&#x09;	 \*/
+
+
+
+\- so for here maintaining the contract we are overridng equals method and setting the same return
+
+\- hashcode had to be simialr as both are same objects. but not following the contreact here, we need to override the hashcode method also here
+
+\- - But it creatd anther problem in hashcode - objects ar same but hashcode are different ?? and as per the 1st rule wheneeve - if same objects then same hashcode.. tis not following here
+
+\- so whenever, overrridng the equal method - must mantain the contract, so for it need to override the Hashcode also otherwiise contract will break
+
+* by default equals work as(==)
+* So here by overrdign hascode - if objects are same then hashcodes are samee, if objects are differetn then hashcodes are also different
+* so for comparing such custom objects - first rule is to override the equal method.
+
+
+
+
+
+public int hashCode() { // this is called overrding the hashCode
+
+&#x09;	return 12345; // this is called hardcoding of hashcode.
+
+&#x09;}
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Day 49\_04th June
+
+
+
+
+
+* So, when there is class and adding creating objects even duplicate - hashset adding as a new object and allowng duplicate object - which is breaking contract. So need to override equal and hashset.
+* equals comes here when 2 same eleemnmts are adding into a bucket.
+
+
+
+Pending - Take all 4 cases, make seperate classes and debug all.
+
+
+
+* Load Factor - 0.75 -> **75%** (consider as best load factor as per experience in industry)
+* Capacity - as be asssign anyhitng but **by defual** is **16**. (when create hashset , we can assign directly)
+* Threshold - 16\*75/100 -> 12 -> once you add **13nth** eleement, new capacity will be **doubled** -> **32**
+
+
+
+
+
+**Triggered - Rehashing**
+
+
+
+* Internally Linked List is uses as a data structure.
+* In Hashing, When the **colission** at **particular index** is **more than 8** times, then this Linked list converted into **Balanced Tree**.(Red Black Tree) and ths is called **Treeify** in java. This wa sintoduced in Java 8.
+* Its for improvement of search perfronmance.
+* Minimum capacity is **64** to achieve it. If its >= 64 the  treeify exisst here.
+* If capacity is less or not mentioned 64, then it first comes lower capacity to 64 and then start balancing.
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Day 50\_05th June
+
+
+
+
+
+Iterating in Set - 
+
+
+
+* In hashset - return type of add method is boolean. If added eleemmnt esists then true, otherwise false.
+* get method is not working here, becuuae get means passoemthing and get something.. here its abput true and false.
+* FOr itrating in set, tradition for loop(Index based) doesn't work . as no fix indexing, nodes are null also , so use range based for loop.
+* Hash allows only one null. On adding more nulls it will be only adding not printing.
+
+
+
+
+
+LinkedHashSet - 
+
+
+
+* When you want to unique as well as in order. Then use LinkedHashSet - LinkedList + HashSet
+
+&#x20;                                                                       (For Ordering)+(For Uniqueness)								
+
+* The only difference between HashSet \& LinkedHashSet is of Order, in LinkedHashSet we get in order with Uniqueness rest Everything is same as HashSet - same Load Factor, Same Workking, Same Capacity everything.
+* LinkedHashSet also allows only one null. On adding more nulls it will be only adding not printing.
 
 
 
 
 
 
+
+TreeSet - 
+
+
+
+* Tree Set is uses for the sorting. rest Everything is same a hashset.. so when we want in SOrted way + Unique then use TreeSet.
+* TreeSet doesn't allow to single null .
+* So, TreeSet \& TreeMap doesn;t allow null;
+
+
+
+Equal \& compare are two different, 
+
+
+
+Equals -> directly checks both are equal or not. 
+
+compare -> checks which one is smaller and which one is larger. like - Banana vs Cat -> its comparable because in terms of Unicode b is smaller and c is larger.
+
+
+
+
+
+So finally, 
+
+
+
+List -> Allows **Multiple NULL**. (ArrayList \& LinkedList both)
+
+Set -> Allows Only **ONE NULL**. (HashSet \& LinkedHashSet both) means (HashMap \& LinkedHashMap also allows)
+
+TreeSet -> **doesn't allows NULL** at all. Not a single NULL. means TreeMap also doesn't allow NULL;
+
+
+
+* By creating class and using its object in the TreeSet isn't work.
+
+
+
+
+
+\-------------------------------------------------------------------------------------------------------------------------------
 
 
 
