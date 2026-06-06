@@ -2740,10 +2740,6 @@ Day 47\_02nd June
 
 
 
-Set -
-
-* Internally Set is also using map.
-
 
 
 \->List Ordered, Duplicate and multiple null
@@ -2753,6 +2749,16 @@ Set -
 ArrayList -> Random read / access O(1)
 
 LinkedList -> Random insertion/ deletion > O(n), O\[n)
+
+
+
+
+
+Set -
+
+* Internally Set is also using map.
+
+
 
 \-----------
 
@@ -2779,7 +2785,7 @@ TreeSet
 
 
 * Hashet uses Hashcode - which is a unique number (-ve to +ve).
-* Hashcode having default size (16).
+* Hashcode having **default size (16).**
 
 
 
@@ -2793,9 +2799,9 @@ equals() ->
 
 
 
-1\. If Two objects are equal then hash code must be same.
+1\. If Two **objects are equal** then **hash code must be same.**
 
-2\. If two objects are returning same hashcode, object may or may not be equal. (JVM gives two sma ehashcodes between two different objects, because of some issue or error, happens very rarely) and this is known as - **Hash Collision**.
+2\. If two objects are **returning same hashcode**, **object may or may not be equal**. (JVM gives two sma ehashcodes between two different objects, because of some issue or error, happens very rarely) and this is known as - **Hash Collision**.
 
 
 

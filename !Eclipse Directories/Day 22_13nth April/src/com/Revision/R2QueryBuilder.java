@@ -10,7 +10,7 @@ public class R2QueryBuilder {
 
 	}
 
-	public void generateSQL(String empID, String empSalary) {
+	public void generateSQL(jString empID, String empSalary) {
 		StringBuffer query = new StringBuffer("Select firsName and lastName from Employee where ");
 
 		if (empID != null) {
